@@ -1,0 +1,65 @@
+{
+  "$schema": "../schemas/site.schema.json",
+  "isSample": true,
+  "url": "https://monastery.example.org",
+  "name": { "en": "Holy St. Example Monastery", "ru": "Монастырь святого Примера", "el": "Ιερά Μονή Αγίου Παραδείγματος" },
+  "shortName": { "en": "St. Example Monastery", "ru": "Обитель св. Примера", "el": "Μονή Αγ. Παραδείγματος" },
+  "location": { "en": "Sample Valley · sample site", "ru": "Образцовая долина · пример сайта", "el": "Κοιλάδα Δείγματος · δείγμα ιστότοπου" },
+  "timezone": "America/New_York",
+  "currency": "USD",
+  "themeColor": "#1f1e1c",
+  "sourceLocale": "en",
+  "locales": [
+    { "code": "en", "label": "EN", "name": "English", "dir": "ltr", "ogLocale": "en_US", "timeFormat": "12h", "weekStart": 0, "fallback": [] },
+    { "code": "ru", "label": "RU", "name": "Русский", "dir": "ltr", "ogLocale": "ru_RU", "timeFormat": "24h", "weekStart": 1, "fallback": ["en"] },
+    { "code": "el", "label": "EL", "name": "Ελληνικά", "dir": "ltr", "ogLocale": "el_GR", "timeFormat": "24h", "weekStart": 1, "fallback": ["en"] }
+  ],
+  "logo": {
+    "style": "kiot",
+    "icon": "",
+    "src": "",
+    "alt": { "en": "Kiot with the patron icon", "ru": "Киот с иконой небесного покровителя", "el": "Προσκυνητάρι με την εικόνα του προστάτη αγίου" }
+  },
+  "contact": {
+    "address": { "en": "1 Example Road, Sample Valley, ST 00000", "ru": "Пример-роуд, 1, Образцовая долина, ST 00000", "el": "Οδός Παραδείγματος 1, Κοιλάδα Δείγματος, ST 00000" },
+    "phone": { "display": "+1 555 0100", "e164": "+15550100" },
+    "phoneHours": { "en": "The office answers Tuesday to Saturday, 10 AM to 4 PM.", "ru": "Канцелярия отвечает со вторника по субботу с 10:00 до 16:00.", "el": "Το γραφείο απαντά Τρίτη έως Σάββατο, 10:00 έως 16:00." },
+    "email": "office@monastery.example.org",
+    "directionsUrl": "https://www.openstreetmap.org/",
+    "mapEmbedUrl": ""
+  },
+  "visiting": {
+    "hours": {
+      "mon": [],
+      "tue": [["10:00", "12:00"], ["14:00", "17:00"]],
+      "wed": [["10:00", "12:00"], ["14:00", "17:00"]],
+      "thu": [["10:00", "12:00"], ["14:00", "17:00"]],
+      "fri": [["10:00", "12:00"], ["14:00", "17:00"]],
+      "sat": [["10:00", "12:00"], ["14:00", "17:00"]],
+      "sun": [["11:30", "17:00"]]
+    },
+    "note": { "en": "Mondays are kept as a day of quiet. The church is open for every service.", "ru": "Понедельник у нас день тишины. Храм открыт на каждой службе.", "el": "Η Δευτέρα είναι ημέρα ησυχίας. Ο ναός είναι ανοιχτός σε κάθε ακολουθία." }
+  },
+  "livestream": { "url": "" },
+  "forms": { "endpoint": "" },
+  "payments": { "provider": "none", "checkoutEndpoint": "" },
+  "integrations": {
+    "orthodoxconnect": {
+      "enabled": true,
+      "newsletter": true,
+      "communityId": "",
+      "deepLink": "orthodoxconnect://community/{communityId}/items/{itemId}",
+      "deepLinkHome": "orthodoxconnect://community/{communityId}",
+      "webLink": "",
+      "newsletterEndpoint": "",
+      "sampleFeed": "integrations/orthodoxconnect.sample.json"
+    },
+    "fundTotals": { "provider": "none", "endpoint": "" }
+  },
+  "seo": {
+    "title": { "en": "Holy St. Example Monastery · sample monastery website", "ru": "Монастырь святого Примера · пример сайта обители", "el": "Ιερά Μονή Αγίου Παραδείγματος · δείγμα ιστότοπου μονής" },
+    "description": { "en": "A sample website for an Orthodox monastery: the daily cycle of services, visiting and pilgrimage, commemorations, the monastery shop and gifts.", "ru": "Пример сайта православной обители: суточный круг богослужений, паломничество, поминовения, монастырская лавка и пожертвования.", "el": "Δείγμα ιστότοπου ορθόδοξης μονής: ημερήσιος κύκλος ακολουθιών, προσκύνημα, μνημόσυνα, πωλητήριο και δωρεές." },
+    "image": "/assets/img/quiet-abode-levitan.jpg"
+  },
+  "theme": { "tokens": "theme/tokens.json" }
+}

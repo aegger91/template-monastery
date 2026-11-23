@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/page.schema.json",
+  "id": "cart",
+  "slug": "shop/cart",
+  "noindex": true,
+  "title": { "en": "Cart", "ru": "Корзина", "el": "Καλάθι" },
+  "sections": [
+    { "id": "header", "type": "page-header", "eyebrow": { "en": "Monastery shop", "ru": "Монастырская лавка", "el": "Πωλητήριο" } },
+    { "id": "cart", "type": "cart" }
+  ]
+}

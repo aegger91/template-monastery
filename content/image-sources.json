@@ -1,0 +1,64 @@
+{
+  "$schema": "../schemas/image-sources.schema.json",
+  "note": {
+    "en": "All photographs and paintings are public domain (PD-old) and stand in for the monastery's own photographs. Drawn placeholders (icons, shop items, map) were made for this template.",
+    "ru": "Все фотографии и картины находятся в общественном достоянии (PD-old) и заменяют собственные фотографии обители. Рисованные заглушки (иконы, товары, карта) сделаны для этого шаблона.",
+    "el": "Όλες οι φωτογραφίες και οι πίνακες είναι κοινής χρήσης (PD-old) και αντικαθιστούν προσωρινά τις φωτογραφίες της μονής. Τα σχέδια (εικόνες, είδη, χάρτης) φτιάχτηκαν για αυτό το πρότυπο."
+  },
+  "images": [
+    {
+      "src": "/assets/img/quiet-abode-levitan.jpg",
+      "caption": { "en": "Isaac Levitan, Quiet Abode, 1890", "ru": "Исаак Левитан. Тихая обитель, 1890", "el": "Ισαάκ Λεβιτάν, Ήσυχη μονή, 1890" },
+      "author": "Isaac Levitan", "date": "1890", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isaak_Levitan_Tihaya_obitel_(big).jpg"
+    },
+    {
+      "src": "/assets/img/lake-monastery-1910.jpg",
+      "caption": { "en": "Nilov Monastery on Stolobny Island, Lake Seliger. Photograph by Sergei Prokudin-Gorskii, 1910", "ru": "Нилова пустынь на острове Столобном, озеро Селигер. Фото С. М. Прокудина-Горского, 1910", "el": "Μονή του Αγίου Νείλου στη νήσο Στολόμπνι, λίμνη Σελιγκέρ. Φωτογραφία Σ. Προκούντιν-Γκόρσκι, 1910" },
+      "author": "Sergei Prokudin-Gorskii", "date": "1910", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Monastery_of_St._Nil_on_Stolobnyi_Island_in_Lake_Seliger_in_Tver_Province_(Gorskii_03973).jpg"
+    },
+    {
+      "src": "/assets/img/holy-gates-1909.jpg",
+      "caption": { "en": "Holy Gates of the Kirillo-Belozersky Monastery from the east. Photograph by Sergei Prokudin-Gorskii, 1909", "ru": "Святые врата Кирилло-Белозерского монастыря с востока. Фото С. М. Прокудина-Горского, 1909", "el": "Η Αγία Πύλη της Μονής Κιρίλλο-Μπελοζέρσκι από τα ανατολικά. Φωτογραφία Σ. Προκούντιν-Γκόρσκι, 1909" },
+      "author": "Sergei Prokudin-Gorskii", "date": "1909", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%8F%D1%82%D1%8B%D0%B5_%D0%B2%D1%80%D0%B0%D1%82%D0%B0_%D1%81_%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA%D0%B0_1909.jpg"
+    },
+    {
+      "src": "/assets/img/evening-bells-levitan.jpg",
+      "caption": { "en": "Isaac Levitan, Evening Bells, 1892", "ru": "Исаак Левитан. Вечерний звон, 1892", "el": "Ισαάκ Λεβιτάν, Εσπερινές καμπάνες, 1892" },
+      "author": "Isaac Levitan", "date": "1892", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Levitan_Evening_bells_1892.jpg"
+    },
+    {
+      "src": "/assets/img/above-eternal-peace-levitan.jpg",
+      "caption": { "en": "Isaac Levitan, Above Eternal Peace, 1894", "ru": "Исаак Левитан. Над вечным покоем, 1894", "el": "Ισαάκ Λεβιτάν, Πάνω από την αιώνια γαλήνη, 1894" },
+      "author": "Isaac Levitan", "date": "1894", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LevitanAboveEternalPeace.jpg"
+    },
+    {
+      "src": "/assets/img/birch-grove-levitan.jpg",
+      "caption": { "en": "Isaac Levitan, Birch Grove, 1885 to 1889", "ru": "Исаак Левитан. Берёзовая роща, 1885–1889", "el": "Ισαάκ Λεβιτάν, Δάσος με σημύδες, 1885–1889" },
+      "author": "Isaac Levitan", "date": "1885–1889", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1885-1889_Birkenhain.jpg"
+    },
+    {
+      "src": "/assets/img/pine-forest-shishkin.jpg",
+      "caption": { "en": "Ivan Shishkin, Pine Forest, 1895", "ru": "Иван Шишкин. Сосновый бор, 1895", "el": "Ιβάν Σίσκιν, Πευκοδάσος, 1895" },
+      "author": "Ivan Shishkin", "date": "1895", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pine_Forest_by_Ivan_Shishkin_1895.jpg"
+    },
+    {
+      "src": "/assets/img/rye-shishkin.jpg",
+      "caption": { "en": "Ivan Shishkin, Rye, 1878", "ru": "Иван Шишкин. Рожь, 1878", "el": "Ιβάν Σίσκιν, Σίκαλη, 1878" },
+      "author": "Ivan Shishkin", "date": "1878", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ivan_Shishkin_-_%D0%A0%D0%BE%D0%B6%D1%8C_-_Google_Art_Project.jpg"
+    },
+    {
+      "src": "/assets/img/drying-nets-seliger-1910.jpg",
+      "caption": { "en": "Drying nets on Lake Seliger. Photograph by Sergei Prokudin-Gorskii, 1910", "ru": "Сушка сетей на озере Селигер. Фото С. М. Прокудина-Горского, 1910", "el": "Δίχτυα στεγνώνουν στη λίμνη Σελιγκέρ. Φωτογραφία Σ. Προκούντιν-Γκόρσκι, 1910" },
+      "author": "Sergei Prokudin-Gorskii", "date": "1910", "license": "Public domain (PD-old)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drying_nets_on_Lake_Seliger_(by_Sergei_Prokudin-Gorskii,_1910).jpg"
+    }
+  ]
+}

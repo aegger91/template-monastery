@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/orthodoxconnect-feed.schema.json",
+  "isSample": true,
+  "community": "sample-community",
+  "items": [
+    {
+      "id": "sample-workday-1", "kind": "workday", "status": "open",
+      "title": { "en": "Sample work day", "ru": "Пример трудового дня", "el": "Δείγμα ημέρας εργασίας" },
+      "summary": { "en": "Placeholder description of the work.", "ru": "Условное описание работ.", "el": "Ενδεικτική περιγραφή της εργασίας." },
+      "startsAt": "2026-12-05T09:00:00-05:00", "endsAt": "2026-12-05T15:00:00-05:00",
+      "location": { "en": "At the monastery", "ru": "В обители", "el": "Στη μονή" },
+      "slots": { "needed": 12, "filled": 7 }
+    },
+    {
+      "id": "sample-workday-2", "kind": "workday", "status": "open",
+      "title": { "en": "Sample work day", "ru": "Пример трудового дня", "el": "Δείγμα ημέρας εργασίας" },
+      "summary": { "en": "Placeholder description of the work.", "ru": "Условное описание работ.", "el": "Ενδεικτική περιγραφή της εργασίας." },
+      "startsAt": "2027-01-23T09:00:00-05:00", "endsAt": "2027-01-23T14:00:00-05:00",
+      "location": { "en": "At the monastery", "ru": "В обители", "el": "Στη μονή" },
+      "slots": { "needed": 8, "filled": 8 }
+    },
+    {
+      "id": "sample-pilgrimage-1", "kind": "pilgrimage", "status": "open",
+      "title": { "en": "Sample pilgrimage", "ru": "Пример паломничества", "el": "Δείγμα προσκυνήματος" },
+      "summary": { "en": "Placeholder description of the trip.", "ru": "Условное описание поездки.", "el": "Ενδεικτική περιγραφή του ταξιδιού." },
+      "startsAt": "2026-12-26T07:00:00-05:00", "endsAt": "2026-12-28T18:00:00-05:00",
+      "location": { "en": "Departs from the monastery gate", "ru": "Отправление от ворот обители", "el": "Αναχώρηση από την πύλη της μονής" },
+      "slots": { "needed": 20, "filled": 13 }
+    }
+  ]
+}

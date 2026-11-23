@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/donate.schema.json",
+  "funds": [
+    { "id": "general", "icon": "heart", "name": { "en": "Where most needed", "ru": "На нужды обители", "el": "Όπου υπάρχει ανάγκη" }, "description": { "en": "Placeholder fund description.", "ru": "Условное описание фонда.", "el": "Ενδεικτική περιγραφή." } },
+    { "id": "building", "icon": "house", "goal": 250000, "name": { "en": "Building fund", "ru": "На строительство", "el": "Ταμείο ανέγερσης" }, "description": { "en": "Placeholder fund description.", "ru": "Условное описание фонда.", "el": "Ενδεικτική περιγραφή." } },
+    { "id": "upkeep", "icon": "candle", "name": { "en": "Upkeep", "ru": "На содержание", "el": "Συντήρηση" }, "description": { "en": "Placeholder fund description.", "ru": "Условное описание фонда.", "el": "Ενδεικτική περιγραφή." } }
+  ],
+  "needsIntro": { "en": "Sample needs. Each one fills in its amount.", "ru": "Примеры нужд. Сумма подставится сама.", "el": "Δείγματα αναγκών. Το ποσό συμπληρώνεται αυτόματα." },
+  "needs": [
+    { "id": "need-oil", "amount": 60, "name": { "en": "Lampada oil for a month", "ru": "Лампадное масло на месяц", "el": "Λάδι για τα καντήλια ενός μήνα" }, "description": { "en": "Sample need.", "ru": "Пример нужды.", "el": "Δείγμα ανάγκης." } },
+    { "id": "need-firewood", "amount": 240, "name": { "en": "A cord of firewood", "ru": "Дрова на зиму", "el": "Καυσόξυλα για τον χειμώνα" }, "description": { "en": "Sample need.", "ru": "Пример нужды.", "el": "Δείγμα ανάγκης." } },
+    { "id": "need-roof", "amount": 500, "name": { "en": "A section of the church roof", "ru": "Часть кровли храма", "el": "Τμήμα της στέγης του ναού" }, "description": { "en": "Sample need.", "ru": "Пример нужды.", "el": "Δείγμα ανάγκης." } }
+  ],
+  "amounts": [25, 50, 100, 250, 500],
+  "otherWays": {
+    "en": "Placeholder: other ways to give, such as checks by mail.",
+    "ru": "Место для текста о других способах помощи.",
+    "el": "Θέση για κείμενο με άλλους τρόπους δωρεάς."
+  }
+}

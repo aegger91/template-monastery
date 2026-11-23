@@ -1,0 +1,14 @@
+{
+  "$schema": "../schemas/gallery.schema.json",
+  "images": [
+    { "src": "/assets/img/quiet-abode-levitan.jpg", "alt": { "en": "A monastery across a river at sunset, reached by a wooden footbridge", "ru": "Монастырь за рекой на закате, деревянный мостик", "el": "Μονή πέρα από ποτάμι στο ηλιοβασίλεμα, με ξύλινη γέφυρα" } },
+    { "src": "/assets/img/lake-monastery-1910.jpg", "alt": { "en": "A white monastery on an island, joined to the shore by a long bridge", "ru": "Белый монастырь на острове и длинный мост к берегу", "el": "Λευκή μονή σε νησί, ενωμένη με την ακτή με μακριά γέφυρα" } },
+    { "src": "/assets/img/holy-gates-1909.jpg", "alt": { "en": "Monastery gate church with green domes", "ru": "Надвратная церковь с зелёными главами", "el": "Ναός πάνω από την πύλη μονής με πράσινους τρούλους" } },
+    { "src": "/assets/img/evening-bells-levitan.jpg", "alt": { "en": "Evening by a river with a monastery on the far bank", "ru": "Вечер у реки, на другом берегу монастырь", "el": "Βράδυ σε ποτάμι με μονή στην απέναντι όχθη" } },
+    { "src": "/assets/img/birch-grove-levitan.jpg", "alt": { "en": "Sunlight in a birch grove", "ru": "Солнце в берёзовой роще", "el": "Φως του ήλιου σε δάσος με σημύδες" } },
+    { "src": "/assets/img/pine-forest-shishkin.jpg", "alt": { "en": "A sandy road through a pine forest", "ru": "Песчаная дорога в сосновом лесу", "el": "Αμμώδης δρόμος μέσα σε πευκοδάσος" } },
+    { "src": "/assets/img/above-eternal-peace-levitan.jpg", "alt": { "en": "A small wooden church above a wide lake under heavy clouds", "ru": "Деревянная церковь над широким озером под тучами", "el": "Ξύλινη εκκλησία πάνω από λίμνη κάτω από βαριά σύννεφα" } },
+    { "src": "/assets/img/drying-nets-seliger-1910.jpg", "alt": { "en": "Fishing nets drying by a lake, 1910", "ru": "Сети сушатся у озера, 1910 год", "el": "Δίχτυα στεγνώνουν σε λίμνη, 1910" } },
+    { "src": "/assets/img/rye-shishkin.jpg", "alt": { "en": "A rye field with tall pines", "ru": "Ржаное поле и высокие сосны", "el": "Χωράφι με σίκαλη και ψηλά πεύκα" } }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "visit",
+  "slug": "visit",
+  "title": { "en": "Visiting and Pilgrimage", "ru": "Паломникам", "el": "Επίσκεψη και προσκύνημα" },
+  "description": { "en": "Visiting hours, directions, guest house stays and requests to speak with a priest.", "ru": "Часы посещения, проезд, проживание в гостинице и беседа со священником.", "el": "Ώρες επισκέψεων, οδηγίες, διαμονή στον ξενώνα και συνομιλία με ιερέα." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Visiting", "ru": "Паломникам", "el": "Επίσκεψη" },
+      "lead": { "en": "Visitors and pilgrims are welcome.", "ru": "Мы рады посетителям и паломникам.", "el": "Οι επισκέπτες και οι προσκυνητές είναι ευπρόσδεκτοι." },
+      "image": { "src": "/assets/img/holy-gates-1909.jpg", "alt": { "en": "Monastery gate church with green domes", "ru": "Надвратная церковь с зелёными главами", "el": "Ναός πάνω από την πύλη μονής με πράσινους τρούλους" }, "position": "50% 30%" }
+    },
+    {
+      "id": "hours",
+      "type": "visiting-hours",
+      "eyebrow": { "en": "Hours", "ru": "Время", "el": "Ώρες" },
+      "title": { "en": "Visiting hours", "ru": "Часы посещения", "el": "Ώρες επισκέψεων" },
+      "directionsTitle": { "en": "Getting here", "ru": "Как добраться", "el": "Πώς θα έρθετε" },
+      "directions": { "en": "Placeholder for directions.", "ru": "Место для описания проезда.", "el": "Θέση για οδηγίες πρόσβασης." }
+    },
+    {
+      "id": "visiting-info",
+      "type": "prose",
+      "background": "parchment",
+      "title": { "en": "Visiting information", "ru": "Информация для посетителей", "el": "Πληροφορίες για επισκέπτες" },
+      "body": { "en": "Placeholder for the monastery's own visiting information.", "ru": "Место для собственной информации обители для посетителей.", "el": "Θέση για τις πληροφορίες επισκεπτών της μονής." }
+    },
+    {
+      "id": "stay",
+      "type": "stay-request",
+      "eyebrow": { "en": "Guest house", "ru": "Гостиница", "el": "Ξενώνας" },
+      "title": { "en": "Request a stay", "ru": "Просьба о проживании", "el": "Αίτημα διαμονής" },
+      "intro": { "en": "Send your dates and we will reply.", "ru": "Сообщите даты, и мы ответим.", "el": "Στείλτε τις ημερομηνίες σας και θα απαντήσουμε." },
+      "housesTitle": { "en": "Where guests stay", "ru": "Где живут гости", "el": "Πού μένουν οι επισκέπτες" },
+      "houses": [
+        { "id": "guest-house", "accepts": ["men"], "maxNights": 7, "maxGuests": 4, "name": { "en": "Guest House", "ru": "Братская гостиница", "el": "Ξενώνας της μονής" }, "note": { "en": "Inside the walls. Men.", "ru": "В ограде обители. Для мужчин.", "el": "Εντός των τειχών. Για άνδρες." } },
+        { "id": "pilgrim-house", "accepts": ["women", "family"], "maxNights": 5, "maxGuests": 8, "name": { "en": "Pilgrim House", "ru": "Паломнический дом", "el": "Οίκος προσκυνητών" }, "note": { "en": "Outside the gate. Women and families.", "ru": "За воротами. Для женщин и семей.", "el": "Έξω από την πύλη. Για γυναίκες και οικογένειες." } }
+      ],
+      "rules": { "en": "Placeholder for house rules.", "ru": "Место для правил проживания.", "el": "Θέση για τους κανόνες διαμονής." },
+      "groups": [
+        { "id": "men", "icon": "house", "label": { "en": "Men", "ru": "Мужчины", "el": "Άνδρες" } },
+        { "id": "women", "icon": "house", "label": { "en": "Women", "ru": "Женщины", "el": "Γυναίκες" } },
+        { "id": "family", "icon": "hands", "label": { "en": "A family", "ru": "Семья", "el": "Οικογένεια" } }
+      ],
+      "arrivalWindows": [
+        { "id": "morning", "label": { "en": "Morning, before noon", "ru": "Утром, до полудня", "el": "Πρωί, πριν από το μεσημέρι" } },
+        { "id": "afternoon", "label": { "en": "Afternoon, 2 to 5 PM", "ru": "Днём, с 14:00 до 17:00", "el": "Απόγευμα, 14:00 έως 17:00" } },
+        { "id": "evening", "label": { "en": "Evening, after Vespers", "ru": "Вечером, после вечерни", "el": "Βράδυ, μετά τον Εσπερινό" } }
+      ],
+      "arrivalHint": { "en": "The office is closed on Mondays.", "ru": "По понедельникам канцелярия закрыта.", "el": "Το γραφείο είναι κλειστό τις Δευτέρες." },
+      "messageHint": { "en": "Optional", "ru": "Необязательно", "el": "Προαιρετικό" },
+      "agreeLabel": { "en": "I will keep the house rules.", "ru": "Обещаю соблюдать правила обители.", "el": "Θα τηρήσω τους κανόνες της μονής." }
+    },
+    {
+      "id": "spiritual-father",
+      "type": "confession-request",
+      "background": "parchment",
+      "eyebrow": { "en": "Spiritual father", "ru": "Духовник", "el": "Πνευματικός" },
+      "title": { "en": "Speak with a priest", "ru": "Беседа со священником", "el": "Συνομιλία με ιερέα" },
+      "body": { "en": "Ask for a conversation or for confession.", "ru": "Попросите о беседе или исповеди.", "el": "Ζητήστε συνομιλία ή εξομολόγηση." },
+      "reasons": [
+        { "id": "confession", "label": { "en": "Confession", "ru": "Исповедь", "el": "Εξομολόγηση" } },
+        { "id": "conversation", "label": { "en": "A conversation", "ru": "Беседа", "el": "Συνομιλία" } },
+        { "id": "other", "label": { "en": "Something else", "ru": "Другое", "el": "Κάτι άλλο" } }
+      ],
+      "messageHint": { "en": "Optional", "ru": "Необязательно", "el": "Προαιρετικό" }
+    }
+  ]
+}

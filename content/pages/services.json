@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "services",
+  "slug": "services",
+  "title": { "en": "Services and Schedule", "ru": "Богослужения", "el": "Ακολουθίες" },
+  "description": { "en": "Today's services, the weekly and monthly schedule, and coming feasts.", "ru": "Службы сегодня, расписание на неделю и месяц, ближайшие праздники.", "el": "Οι σημερινές ακολουθίες, το εβδομαδιαίο και μηνιαίο πρόγραμμα, οι προσεχείς εορτές." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Services", "ru": "Богослужения", "el": "Ακολουθίες" },
+      "lead": { "en": "All services are open to visitors.", "ru": "Все службы открыты для посетителей.", "el": "Όλες οι ακολουθίες είναι ανοιχτές στους επισκέπτες." },
+      "image": { "src": "/assets/img/evening-bells-levitan.jpg", "alt": { "en": "Evening by a river with a monastery on the far bank", "ru": "Вечер у реки, на другом берегу монастырь", "el": "Βράδυ σε ποτάμι με μονή στην απέναντι όχθη" }, "position": "50% 35%" }
+    },
+    {
+      "id": "today",
+      "type": "today",
+      "title": { "en": "Today", "ru": "Сегодня", "el": "Σήμερα" },
+      "panelTitle": { "en": "Today's services", "ru": "Службы сегодня", "el": "Σημερινές ακολουθίες" }
+    },
+    {
+      "id": "schedule",
+      "type": "schedule",
+      "background": "parchment",
+      "eyebrow": { "en": "Schedule", "ru": "Расписание", "el": "Πρόγραμμα" },
+      "title": { "en": "Week and month", "ru": "Неделя и месяц", "el": "Εβδομάδα και μήνας" }
+    },
+    {
+      "id": "feasts",
+      "type": "feast-list",
+      "background": "charcoal",
+      "eyebrow": { "en": "Calendar", "ru": "Календарь", "el": "Ημερολόγιο" },
+      "title": { "en": "Coming feasts", "ru": "Ближайшие праздники", "el": "Προσεχείς εορτές" },
+      "limit": 8
+    },
+    {
+      "id": "livestream",
+      "type": "livestream",
+      "eyebrow": { "en": "Livestream", "ru": "Трансляция", "el": "Ζωντανή μετάδοση" },
+      "title": { "en": "Pray with us from afar", "ru": "Молитва издалека", "el": "Προσευχή από μακριά" },
+      "placeholder": { "en": "No livestream link yet.", "ru": "Ссылка на трансляцию пока не добавлена.", "el": "Δεν υπάρχει ακόμη σύνδεσμος μετάδοσης." }
+    }
+  ]
+}

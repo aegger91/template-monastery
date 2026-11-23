@@ -1,0 +1,26 @@
+{
+  "$schema": "../schemas/news.schema.json",
+  "items": [
+    {
+      "id": "sample-news-3", "date": "2026-11-10",
+      "image": { "src": "/assets/img/evening-bells-levitan.jpg", "alt": { "en": "Evening by a river with a monastery on the far bank", "ru": "Вечер у реки, на другом берегу монастырь", "el": "Βράδυ σε ποτάμι με μονή στην απέναντι όχθη" } },
+      "title": { "en": "Sample news item", "ru": "Пример новости", "el": "Δείγμα ειδήσεων" },
+      "summary": { "en": "A one-line summary of a news item.", "ru": "Краткое описание новости в одну строку.", "el": "Μια σύντομη περίληψη ειδήσεων." },
+      "body": { "en": "Placeholder for the full news text.", "ru": "Место для полного текста новости.", "el": "Θέση για το πλήρες κείμενο." }
+    },
+    {
+      "id": "sample-news-2", "date": "2026-10-14",
+      "image": { "src": "/assets/img/drying-nets-seliger-1910.jpg", "alt": { "en": "Fishing nets drying by a lake, 1910", "ru": "Сети сушатся у озера, 1910 год", "el": "Δίχτυα στεγνώνουν σε λίμνη, 1910" } },
+      "title": { "en": "Sample news item", "ru": "Пример новости", "el": "Δείγμα ειδήσεων" },
+      "summary": { "en": "A one-line summary of a news item.", "ru": "Краткое описание новости в одну строку.", "el": "Μια σύντομη περίληψη ειδήσεων." },
+      "body": { "en": "Placeholder for the full news text.", "ru": "Место для полного текста новости.", "el": "Θέση για το πλήρες κείμενο." }
+    },
+    {
+      "id": "sample-news-1", "date": "2026-09-21",
+      "image": { "src": "/assets/img/rye-shishkin.jpg", "alt": { "en": "A rye field with tall pines", "ru": "Ржаное поле и высокие сосны", "el": "Χωράφι με σίκαλη και ψηλά πεύκα" } },
+      "title": { "en": "Sample news item", "ru": "Пример новости", "el": "Δείγμα ειδήσεων" },
+      "summary": { "en": "A one-line summary of a news item.", "ru": "Краткое описание новости в одну строку.", "el": "Μια σύντομη περίληψη ειδήσεων." },
+      "body": { "en": "Placeholder for the full news text.", "ru": "Место для полного текста новости.", "el": "Θέση για το πλήρες κείμενο." }
+    }
+  ]
+}

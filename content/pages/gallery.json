@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "gallery",
+  "slug": "gallery",
+  "title": { "en": "Gallery", "ru": "Фотографии", "el": "Φωτογραφίες" },
+  "sections": [
+    { "id": "header", "type": "page-header", "eyebrow": { "en": "Gallery", "ru": "Фотографии", "el": "Φωτογραφίες" }, "lead": { "en": "Placeholder photographs.", "ru": "Фотографии-заглушки.", "el": "Ενδεικτικές φωτογραφίες." } },
+    { "id": "photos", "type": "gallery" }
+  ]
+}

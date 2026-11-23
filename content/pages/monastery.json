@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "monastery",
+  "slug": "monastery",
+  "title": { "en": "Our Monastery", "ru": "Обитель", "el": "Η Μονή" },
+  "description": { "en": "History, the abbot, the brotherhood and the patron saint.", "ru": "История, игумен, братия и небесный покровитель.", "el": "Ιστορία, ο ηγούμενος, η αδελφότητα και ο προστάτης άγιος." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Our monastery", "ru": "Обитель", "el": "Η μονή" },
+      "lead": { "en": "Placeholder for one line about the monastery.", "ru": "Место для одной строки об обители.", "el": "Θέση για μία γραμμή για τη μονή." },
+      "image": { "src": "/assets/img/lake-monastery-1910.jpg", "alt": { "en": "A white monastery on an island, joined to the shore by a long bridge", "ru": "Белый монастырь на острове и длинный мост к берегу", "el": "Λευκή μονή σε νησί, ενωμένη με την ακτή με μακριά γέφυρα" }, "position": "50% 30%" }
+    },
+    {
+      "id": "history",
+      "type": "split",
+      "eyebrow": { "en": "History", "ru": "История", "el": "Ιστορία" },
+      "title": { "en": "Our history", "ru": "История обители", "el": "Η ιστορία μας" },
+      "body": { "en": "Placeholder for the monastery's history.", "ru": "Место для истории обители.", "el": "Θέση για την ιστορία της μονής." },
+      "image": { "src": "/assets/img/holy-gates-1909.jpg", "alt": { "en": "Monastery gate church with green domes", "ru": "Надвратная церковь с зелёными главами", "el": "Ναός πάνω από την πύλη μονής με πράσινους τρούλους" } }
+    },
+    {
+      "id": "abbot",
+      "type": "person",
+      "background": "parchment",
+      "eyebrow": { "en": "The abbot", "ru": "Игумен", "el": "Ο ηγούμενος" },
+      "name": { "en": "Hegumen N.", "ru": "Игумен N.", "el": "Ηγούμενος Ν." },
+      "role": { "en": "Abbot (sample name)", "ru": "Настоятель (условное имя)", "el": "Ηγούμενος (ενδεικτικό όνομα)" },
+      "body": { "en": "Placeholder for a short note about the abbot.", "ru": "Место для краткой заметки о настоятеле.", "el": "Θέση για ένα σύντομο σημείωμα για τον ηγούμενο." },
+      "image": { "art": "portrait", "alt": { "en": "Drawn placeholder portrait", "ru": "Рисованный образец портрета", "el": "Σχέδιο πορτρέτου" } }
+    },
+    {
+      "id": "brotherhood",
+      "type": "prose",
+      "eyebrow": { "en": "The brotherhood", "ru": "Братия", "el": "Η αδελφότητα" },
+      "title": { "en": "Our brotherhood", "ru": "Братия обители", "el": "Η αδελφότητά μας" },
+      "body": { "en": "Placeholder for a short note about the brotherhood.", "ru": "Место для краткой заметки о братии.", "el": "Θέση για ένα σύντομο σημείωμα για την αδελφότητα." }
+    },
+    {
+      "id": "patron",
+      "type": "patron",
+      "background": "charcoal",
+      "eyebrow": { "en": "Patron saint", "ru": "Небесный покровитель", "el": "Προστάτης άγιος" },
+      "name": { "en": "St. Example (sample patron)", "ru": "Святой Пример (условный покровитель)", "el": "Άγιος Παράδειγμα (ενδεικτικός προστάτης)" },
+      "feastDay": { "en": "Feast: December 27 (December 14 on the church calendar)", "ru": "Память: 27 декабря (14 декабря по церковному календарю)", "el": "Εορτή: 27 Δεκεμβρίου (14 Δεκεμβρίου με το εκκλησιαστικό ημερολόγιο)" },
+      "body": { "en": "Placeholder for a short life of the patron saint.", "ru": "Место для краткого жития небесного покровителя.", "el": "Θέση για σύντομο βίο του προστάτη αγίου." },
+      "iconAlt": { "en": "Drawn placeholder of the patron icon", "ru": "Рисованный образец иконы покровителя", "el": "Σχέδιο της εικόνας του προστάτη" },
+      "iconCaption": { "en": "Placeholder icon", "ru": "Икона-заглушка", "el": "Ενδεικτική εικόνα" },
+      "treasuresTitle": { "en": "Relics and icons", "ru": "Святыни обители", "el": "Λείψανα και εικόνες" },
+      "treasures": [
+        { "icon": "candle", "title": { "en": "Relics", "ru": "Мощи", "el": "Λείψανα" }, "text": { "en": "Placeholder for one line.", "ru": "Место для одной строки.", "el": "Θέση για μία γραμμή." } },
+        { "icon": "book", "title": { "en": "Icons", "ru": "Иконы", "el": "Εικόνες" }, "text": { "en": "Placeholder for one line.", "ru": "Место для одной строки.", "el": "Θέση για μία γραμμή." } }
+      ]
+    }
+  ]
+}

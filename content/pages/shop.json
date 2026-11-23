@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "shop",
+  "slug": "shop",
+  "title": { "en": "Shop", "ru": "Лавка", "el": "Πωλητήριο" },
+  "description": { "en": "Icons, incense, candles, honey, prayer ropes, books and handmade goods.", "ru": "Иконы, ладан, свечи, мёд, чётки, книги и рукоделие.", "el": "Εικόνες, θυμίαμα, κεριά, μέλι, κομποσκοίνια, βιβλία και χειροποίητα." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Monastery shop", "ru": "Монастырская лавка", "el": "Πωλητήριο της μονής" },
+      "lead": { "en": "Shipping or pickup at the monastery.", "ru": "Доставка почтой или самовывоз из обители.", "el": "Αποστολή ή παραλαβή από τη μονή." }
+    },
+    { "id": "products", "type": "product-grid" }
+  ]
+}
