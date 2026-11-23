@@ -1,0 +1,28 @@
+{
+  "name": "orthodox-monastery-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample website template for an Orthodox monastery or convent (Holy St. Example Monastery). Schema-driven JSON content, any number of languages, fully static output.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/validate.mjs && node src/build.mjs",
+    "dev": "node scripts/serve.mjs --watch",
+    "serve": "node scripts/serve.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check-orthodox": "node scripts/check-orthodox.mjs",
+    "check-fit": "node scripts/check-fit.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "test": "npm run build && npm run check-orthodox && npm run check-fit"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "marked": "^15.0.12"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.10.0"
+  }
+}
