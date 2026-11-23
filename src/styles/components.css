@@ -3,7 +3,8 @@
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
   min-block-size: 2.9rem; padding: 0.6rem 1.35rem; border: 1px solid transparent; border-radius: 2rem;
-  font-size: 1rem; letter-spacing: 0.02em; line-height: 1.2; text-align: center; text-decoration: none;
+  font-size: 1rem; letter-spacing: 0.02em; line-height: 1.3; text-align: center; text-decoration: none;
+  text-wrap: balance; max-inline-size: 100%;
   transition: background-color var(--motion-gentle) var(--motion-ease), color var(--motion-gentle) var(--motion-ease), border-color var(--motion-gentle) var(--motion-ease);
 }
 .btn__icon { inline-size: 1.1em; block-size: 1.1em; }
@@ -30,7 +31,8 @@
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 0.6rem; margin-block-end: 1.1rem;
-  font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-strong);
+  font-size: 0.8rem; letter-spacing: 0.12em; line-height: 1.4; text-transform: uppercase; color: var(--accent-strong);
+  overflow: visible; max-inline-size: 100%; text-wrap: balance;
 }
 .eyebrow__cross { inline-size: 0.55rem; block-size: 0.92rem; color: var(--accent); }
 .section--bg-charcoal .eyebrow, .section--bg-forest .eyebrow, .hero .eyebrow { color: var(--color-beeswax-300); }
@@ -127,8 +129,8 @@ a.card__link:hover { border-color: var(--accent); transform: translateY(-3px); }
 
 .quote { max-inline-size: 48rem; margin-inline: auto; text-align: center; }
 .quote__cross { inline-size: 1.1rem; block-size: 1.85rem; margin: 0 auto 2rem; color: var(--accent); }
-.quote__text { margin: 0; font-size: clamp(1.45rem, 1.1rem + 1.5vw, 2.35rem); line-height: 1.35; font-style: italic; text-wrap: balance; }
-.quote__source { margin-block-start: 1.5rem; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.82rem; color: var(--color-beeswax-300); }
+.quote__text { margin: 0; font-size: clamp(1.45rem, 1.1rem + 1.5vw, 2.35rem); line-height: 1.4; font-style: italic; text-wrap: balance; overflow: visible; }
+.quote__source { margin-block-start: 1.5rem; letter-spacing: 0.1em; line-height: 1.4; text-transform: uppercase; font-size: 0.82rem; color: var(--color-beeswax-300); overflow: visible; }
 .section--bg-stone .quote__source, .section--bg-parchment .quote__source { color: var(--accent-strong); }
 
 .cta-band { position: relative; display: grid; border-radius: var(--radius-card); overflow: hidden; }

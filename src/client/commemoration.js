@@ -1,5 +1,6 @@
 // Commemoration slips: add names, preview the slip as it will be read at
-// the Proskomedia, total the offering and light, then go to checkout.
+// the Proskomedia, total a freewill offering (chips + Other amount, no
+// minimum — including none) plus optional light, then go to checkout.
 
 $$('form[data-form="commemoration"]').forEach(function (form) {
   var config = readJsonScript(form.id.replace(/-form$/, '-config'));
@@ -12,13 +13,27 @@ $$('form[data-form="commemoration"]').forEach(function (form) {
   var totalEl = $('[data-total]', form);
   var addBtn = $('[data-add-name]', form);
   var rows = $$('.names__row', form);
+  var amount = form.elements.amount;
+  var presets = $$('input[name="amountPreset"]', form);
 
   function checked(name) { var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : null; }
   function names() { return $$('[data-name-input]', form).map(function (i) { return i.value.trim(); }).filter(Boolean); }
+  function giftAmount() {
+    var raw = amount && amount.value != null ? String(amount.value).trim() : '';
+    if (raw === '') return 0;
+    var n = Number(raw);
+    return isNaN(n) ? 0 : Math.round(n * 100) / 100;
+  }
   function total() {
-    var o = config.offerings[checked('offering')];
     var l = config.lights[checked('light')];
-    return (o ? o.amount : 0) + (l ? l.amount : 0);
+    return giftAmount() + (l ? l.amount : 0);
+  }
+
+  function syncPresets() {
+    if (!amount) return;
+    var v = giftAmount();
+    var raw = String(amount.value).trim();
+    presets.forEach(function (p) { p.checked = raw !== '' && Number(p.value) === v; });
   }
 
   function update() {
@@ -35,7 +50,26 @@ $$('form[data-form="commemoration"]').forEach(function (form) {
     totalEl.textContent = money(total());
     var hidden = rows.filter(function (r) { return r.hidden; });
     addBtn.hidden = hidden.length === 0;
+    syncPresets();
   }
+
+  presets.forEach(function (p) {
+    p.addEventListener('change', function () {
+      if (p.checked && amount) {
+        amount.value = p.value;
+        amount.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    });
+  });
+  $$('input[name="offering"]', form).forEach(function (r) {
+    r.addEventListener('change', function () {
+      var label = r.closest('[data-amount]');
+      if (r.checked && label && amount) {
+        amount.value = label.getAttribute('data-amount');
+        amount.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    });
+  });
 
   addBtn.addEventListener('click', function () {
     var next = rows.filter(function (r) { return r.hidden; })[0];
@@ -65,7 +99,8 @@ $$('form[data-form="commemoration"]').forEach(function (form) {
     var type = values.slip;
     var o = config.offerings[values.offering];
     var l = config.lights[values.light];
-    var lines = [{ id: 'commemoration-' + values.offering, name: config.types[type].heading + ': ' + o.label, quantity: 1, amount: o.amount }];
+    var gift = giftAmount();
+    var lines = [{ id: 'commemoration-' + values.offering, name: config.types[type].heading + ': ' + o.label, quantity: 1, amount: gift }];
     if (l && l.amount) lines.push({ id: 'light-' + values.light, name: l.label, quantity: 1, amount: l.amount });
     startCheckout(f, {
       kind: 'commemoration',
@@ -73,7 +108,7 @@ $$('form[data-form="commemoration"]').forEach(function (form) {
       lines: lines,
       total: total(),
       customer: { name: values.name, email: values.email },
-      details: { slip: type, names: values.names, offering: values.offering, light: values.light }
+      details: { slip: type, names: values.names, offering: values.offering, light: values.light, amount: gift }
     });
   };
 });

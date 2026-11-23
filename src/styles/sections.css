@@ -147,16 +147,16 @@
 [dir="rtl"] .month__prev { transform: rotate(-90deg); }
 [dir="rtl"] .month__next { transform: rotate(90deg); }
 .month__grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
-.month__dow { padding-block: 0.4rem; text-align: center; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-soft); overflow: hidden; text-overflow: clip; white-space: nowrap; }
+.month__dow { padding-block: 0.4rem; text-align: center; font-size: 0.7rem; letter-spacing: 0.04em; line-height: 1.3; text-transform: uppercase; color: var(--text-soft); overflow: visible; white-space: normal; overflow-wrap: anywhere; }
 .month__day {
   position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 0.1rem; min-block-size: 3.2rem; padding: 0.35rem 0.4rem;
-  border: 1px solid var(--line); border-radius: var(--radius-small); background: var(--surface); text-align: start; overflow: hidden;
+  border: 1px solid var(--line); border-radius: var(--radius-small); background: var(--surface); text-align: start; overflow: visible;
   transition: border-color var(--motion-gentle) var(--motion-ease), background-color var(--motion-gentle) var(--motion-ease);
 }
 .month__day:hover { border-color: var(--accent); }
 .month__num { font-variant-numeric: tabular-nums; line-height: 1; }
 .month__church { position: absolute; inset-block-start: 0.3rem; inset-inline-end: 0.35rem; font-size: 0.68rem; color: var(--text-soft); line-height: 1; }
-.month__feast { display: none; font-size: 0.72rem; line-height: 1.2; color: var(--accent-strong); }
+.month__feast { display: none; font-size: 0.72rem; line-height: 1.3; color: var(--accent-strong); overflow: visible; overflow-wrap: anywhere; }
 .month__day.is-sunday .month__num { color: var(--color-cinnabar-600); }
 .month__day.is-great { background: #f6ecd0; border-color: var(--color-beeswax-300); }
 .month__day.is-today { box-shadow: inset 0 0 0 2px var(--dark); }
@@ -165,7 +165,7 @@
 .month__day.is-selected .month__num { color: inherit; }
 @media (min-width: 760px) {
   .month__day { min-block-size: 5.6rem; padding: 0.5rem 0.6rem; }
-  .month__feast { display: block; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .month__feast { display: block; }
 }
 .month__legend { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin-block-start: 1rem; font-size: 0.88rem; color: var(--text-soft); }
 .month__key { display: inline-grid; place-items: center; inline-size: 1.1rem; block-size: 1.1rem; border-radius: 2px; font-size: 0.68rem; }

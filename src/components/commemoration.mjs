@@ -26,7 +26,7 @@ export function commemoration(p, ctx) {
       aside: html`<p class="form__aside">${ctx.t('client.paymentNote')}</p>`,
       body: html`${jsonScript(`${id}-config`, config)}
         ${choices(ctx, { name: 'slip', legend: ctx.t('commemoration.slipType'), required: true, className: 'choices--cards choices--two', options: p.slipTypes.map((t, i) => ({ value: t.id, label: ctx.l(t.label), note: ctx.l(t.note), checked: i === 0, className: `choice--${t.id}` })) })}
-        ${choices(ctx, { name: 'offering', legend: ctx.t('commemoration.offering'), required: true, className: 'choices--list', options: p.offerings.map((o, i) => ({ value: o.id, label: ctx.l(o.label), note: ctx.l(o.note), aside: money(o.amount), checked: i === 0 })) })}
+        ${choices(ctx, { name: 'offering', legend: ctx.t('commemoration.offering'), required: true, className: 'choices--list', options: p.offerings.map((o, i) => ({ value: o.id, label: ctx.l(o.label), note: ctx.l(o.note), checked: i === 0, data: { 'data-amount': o.amount } })) })}
         <fieldset class="names">
           <legend class="field__label">${ctx.t('commemoration.names')}<span class="field__req" aria-hidden="true">*</span></legend>
           <p class="field__hint">${ctx.t('commemoration.namesHint', { max: p.maxNames })}</p>
@@ -34,9 +34,14 @@ export function commemoration(p, ctx) {
           <button type="button" class="btn btn--quiet btn--small" data-add-name>${ctx.t('commemoration.addName')}</button>
           <p class="field__error" data-error hidden></p>
         </fieldset>
+        <fieldset class="amounts">
+          <legend class="field__label">${ctx.t('donate.amount')}</legend>
+          <div class="amounts__list">${[...new Set(p.offerings.map((o) => o.amount).filter((a) => a > 0))].map((a) => html`<label class="amounts__chip"><input type="radio" name="amountPreset" value="${a}"><span>${money(a)}</span></label>`)}</div>
+          ${field(ctx, { id: `${id}--amount`, label: ctx.t('donate.otherAmount'), type: 'number', value: '0', attrs: { step: 'any', inputmode: 'decimal', name: 'amount' }, className: 'amounts__other' })}
+        </fieldset>
         ${choices(ctx, { name: 'light', legend: ctx.t('commemoration.light'), className: 'choices--list', hint: ctx.l(p.lightHint), options: p.lights.map((o, i) => ({ value: o.id, label: ctx.l(o.label), note: ctx.l(o.note), aside: o.amount ? money(o.amount) : '', checked: i === 0 })) })}
         ${contactFields(ctx, id, { phone: false })}
-        <p class="commemoration__total" aria-live="polite">${ctx.t('commemoration.total')} <strong data-total>${money(p.offerings[0].amount)}</strong></p>`
+        <p class="commemoration__total" aria-live="polite">${ctx.t('commemoration.total')} <strong data-total>${money(0)}</strong></p>`
     })}
     <aside class="commemoration__aside">
       <div class="slip slip--${p.slipTypes[0].id}" data-slip aria-label="${ctx.t('commemoration.preview')}">

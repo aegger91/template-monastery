@@ -34,6 +34,7 @@
   position: sticky; inset-block-start: 0; z-index: 50;
   background: color-mix(in srgb, var(--bg) 94%, transparent);
   border-block-end: 1px solid var(--line);
+  /* Color/shadow only — height changes are instant to avoid scroll jitter. */
   transition: background-color var(--motion-gentle) var(--motion-ease), border-color var(--motion-gentle) var(--motion-ease), box-shadow var(--motion-gentle) var(--motion-ease), color var(--motion-gentle) var(--motion-ease);
 }
 @supports (backdrop-filter: blur(1px)) {
@@ -44,7 +45,6 @@
   block-size: var(--layout-header);
   max-inline-size: calc(var(--layout-wide) + 2 * var(--space-gutter));
   margin-inline: auto; padding-inline: var(--space-gutter);
-  transition: block-size var(--motion-gentle) var(--motion-ease);
 }
 .site-header.is-condensed { box-shadow: var(--shadow-soft); }
 .site-header.is-condensed .site-header__bar { block-size: var(--layout-header-condensed); }
@@ -59,15 +59,15 @@
 .has-hero-photo .site-header:not(.is-condensed):not(.is-open) .site-header__action { background: var(--color-beeswax-500); color: var(--color-charcoal-950); border-color: transparent; }
 
 .logo { display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none; min-inline-size: 0; flex: 0 1 auto; }
-.logo__mark { flex: none; block-size: 3.4rem; inline-size: auto; transition: block-size var(--motion-gentle) var(--motion-ease); }
+.logo__mark { flex: none; block-size: 3.4rem; inline-size: auto; }
 .logo__mark--seal { block-size: 3rem; }
 .logo__mark--square { inline-size: 3rem; block-size: 3rem; object-fit: cover; border-radius: var(--radius-small); }
 .is-condensed .logo--header .logo__mark { block-size: 2.6rem; }
 .is-condensed .logo--header .logo__mark--square, .is-condensed .logo--header .logo__mark--seal { block-size: 2.4rem; inline-size: auto; }
-.logo__text { display: grid; line-height: 1.1; min-inline-size: 0; }
-.logo__name { font-family: var(--font-display); font-size: 1.12rem; letter-spacing: 0.04em; text-wrap: balance; }
+.logo__text { display: grid; line-height: 1.25; min-inline-size: 0; overflow: visible; }
+.logo__name { font-family: var(--font-display); font-size: 1.12rem; letter-spacing: 0.02em; text-wrap: balance; overflow-wrap: anywhere; }
 .logo--wordmark .logo__name { font-size: 1.35rem; }
-.logo__place { font-size: 0.8rem; color: var(--text-soft); letter-spacing: 0.04em; }
+.logo__place { font-size: 0.8rem; color: var(--text-soft); letter-spacing: 0.02em; overflow-wrap: anywhere; }
 .logo__case { fill: var(--color-charcoal-800); }
 .logo__frame { fill: none; stroke: var(--accent); stroke-width: 1.6; }
 .logo__ledge, .logo__cross { fill: var(--accent); }
@@ -80,7 +80,8 @@
 .nav__link {
   display: inline-flex; align-items: center; gap: 0.3rem;
   padding: 0.55rem 0.7rem; border: 0; background: none; border-radius: var(--radius-small);
-  font-size: 1rem; letter-spacing: 0.01em; text-decoration: none; white-space: nowrap;
+  font-size: 1rem; letter-spacing: 0.01em; line-height: 1.3; text-decoration: none; white-space: nowrap;
+  max-inline-size: 100%;
 }
 .nav__link:hover, .nav__item.is-active > .nav__link, .nav__link[aria-current="page"] { color: var(--accent-strong); }
 .has-hero-photo .site-header:not(.is-condensed) .nav__link:hover { color: var(--color-beeswax-300); }
@@ -191,7 +192,7 @@ body.drawer-open { overflow: hidden; }
 .site-footer__contact { display: grid; gap: 0.6rem; color: var(--on-dark-soft); }
 .site-footer__contact > * { display: flex; gap: 0.6rem; align-items: flex-start; }
 .site-footer__contact .icon { color: var(--accent); margin-block-start: 0.15em; }
-.site-footer__title { font-family: var(--font-body); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-block-end: 1rem; }
+.site-footer__title { font-family: var(--font-body); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.1em; line-height: 1.4; text-transform: uppercase; color: var(--accent); margin-block-end: 1rem; overflow: visible; }
 .site-footer__col ul { display: grid; gap: 0.55rem; }
 .site-footer__newsletter p { color: var(--on-dark-soft); }
 .site-footer__fine { font-size: 0.82rem; margin-block-start: 0.75rem; }

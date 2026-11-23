@@ -40,7 +40,12 @@ function buildAssets(site) {
   const js = `(function () {\n'use strict';\n${calendar}\n${CLIENT.map((n) => `// ---- ${n}\n${fs.readFileSync(path.join(ROOT, 'src/client', n), 'utf8')}`).join('\n')}\n})();\n`;
   writeFile(path.join(OUT, 'assets/site.css'), css);
   writeFile(path.join(OUT, 'assets/site.js'), js);
-  return { cssHref: `${BASE_PATH}/assets/site.css?v=${hash(css)}`, jsHref: `${BASE_PATH}/assets/site.js?v=${hash(js)}`, preloadFonts: preloadFonts(tokens) };
+  return {
+    cssHref: `${BASE_PATH}/assets/site.css?v=${hash(css)}`,
+    jsHref: `${BASE_PATH}/assets/site.js?v=${hash(js)}`,
+    tokens,
+    preloadFontsFor: (locale) => preloadFonts(tokens, locale)
+  };
 }
 
 function favicon(site) {
@@ -109,7 +114,8 @@ export async function build() {
     for (const { code } of content.site.locales) {
       const ctx = createContext({ content, locale: code, page, basePath: BASE_PATH, siteUrl });
       try {
-        writeFile(path.join(OUT, code, page.slug || '', 'index.html'), renderPage(ctx, assets));
+        const pageAssets = { ...assets, preloadFonts: assets.preloadFontsFor(code) };
+        writeFile(path.join(OUT, code, page.slug || '', 'index.html'), renderPage(ctx, pageAssets));
       } catch (err) {
         err.message = `[${code}/${page.id}] ${err.message}`;
         throw err;

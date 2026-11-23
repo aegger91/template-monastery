@@ -27,7 +27,9 @@ export function fontsToCss(tokens) {
         `  font-family: "${f.family}";`,
         `  font-style: ${f.style || 'normal'};`,
         `  font-weight: ${f.weight || 400};`,
-        '  font-display: swap;',
+        // fallback: short block, short swap — avoids blank glyphs and long FOUT
+        // when switching languages between Latin / Cyrillic / Greek subsets.
+        '  font-display: fallback;',
         `  src: url("${f.src}") format("woff2");`,
         f.unicodeRange ? `  unicode-range: ${f.unicodeRange};` : null,
         '}'
@@ -38,4 +40,28 @@ export function fontsToCss(tokens) {
     .join('\n');
 }
 
-export const preloadFonts = (tokens) => (tokens.fontFaces || []).filter((f) => f.preload).map((f) => f.src);
+export function preloadFonts(tokens, locale = 'en') {
+  const faces = tokens.fontFaces || [];
+  const srcs = [];
+  const seen = new Set();
+  const add = (f) => {
+    if (!f || seen.has(f.src)) return;
+    seen.add(f.src);
+    srcs.push(f.src);
+  };
+  faces.filter((f) => f.preload).forEach(add);
+  const script =
+    locale === 'ru' || locale === 'be' || locale === 'uk' || locale === 'sr' || locale === 'bg' ? 'cyrillic'
+      : locale === 'el' ? 'greek'
+        : null;
+  if (script) {
+    faces
+      .filter((f) => f.src.includes(`-${script}-`) && (f.weight === 400 || f.weight === '400') && (!f.style || f.style === 'normal'))
+      .forEach(add);
+  }
+  // Latin-ext for every locale so extended Latin glyphs never fall back.
+  faces
+    .filter((f) => f.src.includes('-latin-ext-') && (f.weight === 400 || f.weight === '400') && (!f.style || f.style === 'normal'))
+    .forEach(add);
+  return srcs;
+}

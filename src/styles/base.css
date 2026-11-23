@@ -43,9 +43,10 @@ dialog { color: inherit; }
 h1, h2, h3, h4 {
   margin: 0 0 0.5em;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.25;
   text-wrap: balance;
   overflow-wrap: break-word;
+  overflow: visible;
   hyphens: auto;
 }
 h1, h2 { font-family: var(--font-display); letter-spacing: 0.01em; }
@@ -53,7 +54,7 @@ h1 { font-size: var(--size-h1); }
 h2 { font-size: var(--size-h2); }
 h3 { font-size: var(--size-h3); font-weight: 500; }
 
-:lang(en) h1, :lang(en) h2 { letter-spacing: 0.03em; }
+:lang(en) h1, :lang(en) h2 { letter-spacing: 0.02em; }
 
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 ::selection { background: var(--accent-soft); color: var(--text); }
@@ -97,17 +98,19 @@ h3 { font-size: var(--size-h3); font-weight: 500; }
 .prose h3 { margin-block-start: 1.5em; }
 .prose--body { font-size: 1.05em; }
 
-/* Slow, gentle reveal on scroll. Turned off for reduced motion. */
-.js .reveal {
+/* Slow, gentle reveal on scroll. html[data-reveal] is set only after
+   above-the-fold items are marked visible, so language switches and first
+   paint never flash empty text. Turned off for reduced motion. */
+html[data-reveal] .reveal:not(.is-visible) {
   opacity: 0;
   transform: translateY(14px);
   transition: opacity var(--motion-slow) var(--motion-ease), transform var(--motion-slow) var(--motion-ease);
   transition-delay: calc(var(--i, 0) * 90ms);
 }
-.js .reveal.is-visible { opacity: 1; transform: none; }
+html[data-reveal] .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
-  .js .reveal { opacity: 1; transform: none; }
+  .reveal { opacity: 1 !important; transform: none !important; }
 }

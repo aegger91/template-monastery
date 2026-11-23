@@ -55,8 +55,13 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
   var el = $('[data-header]');
   if (!el) return;
   var ticking = false;
+  var condensed = false;
+  // Hysteresis so the bar does not flicker at the threshold.
   function update() {
-    el.classList.toggle('is-condensed', window.scrollY > 24);
+    var y = window.scrollY || 0;
+    if (!condensed && y > 48) condensed = true;
+    else if (condensed && y < 12) condensed = false;
+    el.classList.toggle('is-condensed', condensed);
     ticking = false;
   }
   window.addEventListener('scroll', function () {
@@ -164,5 +169,12 @@ $$('[data-lang]').forEach(function (a) {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
     });
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-  items.forEach(function (n) { io.observe(n); });
+  // Mark anything already on screen before enabling hide-until-visible, so
+  // language switches never blank the first viewport.
+  items.forEach(function (n) {
+    var r = n.getBoundingClientRect();
+    if (r.top < window.innerHeight * 0.92 && r.bottom > 0) n.classList.add('is-visible');
+    else io.observe(n);
+  });
+  document.documentElement.setAttribute('data-reveal', '');
 })();

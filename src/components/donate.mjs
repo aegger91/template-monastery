@@ -23,9 +23,9 @@ export function donateForm(p, ctx) {
         ${needOptions.length ? choices(ctx, { name: 'fund', legend: ctx.t('donate.needs'), hint: ctx.l(donate.needsIntro), className: 'choices--list', options: needOptions }) : ''}
         ${choices(ctx, { name: 'frequency', legend: ctx.t('donate.frequency'), className: 'choices--inline', options: [{ value: 'once', label: ctx.t('donate.once'), checked: true }, { value: 'monthly', label: ctx.t('donate.monthly') }] })}
         <fieldset class="amounts">
-          <legend class="field__label">${ctx.t('donate.amount')}<span class="field__req" aria-hidden="true">*</span></legend>
-          <div class="amounts__list">${donate.amounts.map((a, i) => html`<label class="amounts__chip"><input type="radio" name="amountPreset" value="${a}"${i === 1 ? ' checked' : ''}><span>${ctx.money(a)}</span></label>`)}</div>
-          ${field(ctx, { id: `${id}--amount`, label: ctx.t('donate.otherAmount'), type: 'number', required: true, value: String(donate.amounts[1]), attrs: { min: 1, step: 1, inputmode: 'decimal' }, className: 'amounts__other' })}
+          <legend class="field__label">${ctx.t('donate.amount')}</legend>
+          <div class="amounts__list">${donate.amounts.map((a) => html`<label class="amounts__chip"><input type="radio" name="amountPreset" value="${a}"><span>${ctx.money(a)}</span></label>`)}</div>
+          ${field(ctx, { id: `${id}--amount`, label: ctx.t('donate.otherAmount'), type: 'number', value: '0', attrs: { step: 'any', inputmode: 'decimal' }, className: 'amounts__other' })}
         </fieldset>
         ${field(ctx, { id: `${id}--dedication`, label: ctx.t('donate.dedication'), hint: ctx.t('form.optional') })}
         ${contactFields(ctx, id, { phone: false })}`

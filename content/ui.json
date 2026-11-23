@@ -139,7 +139,7 @@
     "donate.once": { "en": "Once", "ru": "Один раз", "el": "Μία φορά" },
     "donate.monthly": { "en": "Every month", "ru": "Каждый месяц", "el": "Κάθε μήνα" },
     "donate.amount": { "en": "Amount", "ru": "Сумма", "el": "Ποσό" },
-    "donate.otherAmount": { "en": "Amount in dollars", "ru": "Сумма в долларах", "el": "Ποσό σε δολάρια" },
+    "donate.otherAmount": { "en": "Other amount", "ru": "Другая сумма", "el": "Άλλο ποσό" },
     "donate.dedication": { "en": "In memory or in honor of", "ru": "В память или в честь", "el": "Στη μνήμη ή προς τιμήν" },
     "donate.continue": { "en": "Continue to payment", "ru": "Перейти к оплате", "el": "Συνέχεια στην πληρωμή" },
 
