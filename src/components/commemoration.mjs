@@ -47,7 +47,7 @@ export function commemoration(p, ctx) {
       </div>
       <div class="commemoration__guide">
         ${art('prosphora-seal', { className: 'commemoration__seal', label: ctx.l(p.sealAlt) })}
-        <div class="prose">${ctx.md(p.guidance)}</div>
+        ${p.note ? html`<div class="prose">${ctx.md(p.note)}</div>` : ''}
       </div>
     </aside>
   </div>`;

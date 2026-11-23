@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "get-involved",
+  "slug": "get-involved",
+  "title": { "en": "Get Involved", "ru": "Помощь обители", "el": "Συμμετοχή" },
+  "description": { "en": "Volunteer work days and pilgrimages, through OrthodoxConnect.", "ru": "Трудовые дни и паломничества через OrthodoxConnect.", "el": "Ημέρες εργασίας και προσκυνήματα μέσω OrthodoxConnect." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Get involved", "ru": "Помощь обители", "el": "Συμμετοχή" },
+      "lead": { "en": "Sign up for work days and pilgrimages.", "ru": "Запишитесь на трудовые дни и паломничества.", "el": "Δηλώστε συμμετοχή σε ημέρες εργασίας και προσκυνήματα." },
+      "image": { "src": "/assets/img/pine-forest-shishkin.jpg", "alt": { "en": "A sandy road through a pine forest", "ru": "Песчаная дорога в сосновом лесу", "el": "Αμμώδης δρόμος μέσα σε πευκοδάσος" } }
+    },
+    {
+      "id": "feed",
+      "type": "oc-feed",
+      "title": { "en": "Coming up", "ru": "Ближайшие", "el": "Προσεχώς" },
+      "kinds": ["workday", "pilgrimage"]
+    },
+    {
+      "id": "app",
+      "type": "oc-cta",
+      "title": { "en": "The monastery in OrthodoxConnect", "ru": "Обитель в OrthodoxConnect", "el": "Η μονή στο OrthodoxConnect" },
+      "body": { "en": "Follow the monastery in the app.", "ru": "Следите за жизнью обители в приложении.", "el": "Ακολουθήστε τη μονή στην εφαρμογή." }
+    }
+  ]
+}

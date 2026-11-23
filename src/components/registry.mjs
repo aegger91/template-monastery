@@ -31,7 +31,6 @@ export const registry = {
   'feast-list': monastery.feastList,
   livestream: monastery.livestream,
   'visiting-hours': monastery.visitingHours,
-  guidelines: visit.guidelines,
   'stay-request': visit.stayRequest,
   'confession-request': visit.confessionRequest,
   commemoration: commemoration.commemoration,

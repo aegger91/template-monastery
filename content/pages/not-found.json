@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "not-found",
+  "slug": "not-found",
+  "noindex": true,
+  "title": { "en": "Page not found", "ru": "Страница не найдена", "el": "Η σελίδα δεν βρέθηκε" },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "404", "ru": "404", "el": "404" },
+      "lead": { "en": "This page does not exist or has moved.", "ru": "Такой страницы нет или она перенесена.", "el": "Η σελίδα δεν υπάρχει ή μετακινήθηκε." },
+      "actions": [
+        { "page": "home", "label": { "en": "Home page", "ru": "На главную", "el": "Αρχική σελίδα" }, "style": "primary" },
+        { "page": "services", "label": { "en": "Services", "ru": "Богослужения", "el": "Ακολουθίες" }, "style": "secondary" }
+      ]
+    }
+  ]
+}

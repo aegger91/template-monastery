@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "calendar",
+    "services",
+    "week",
+    "feastPattern",
+    "feasts"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "calendar": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "enum": [
+            "julian",
+            "revised-julian"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

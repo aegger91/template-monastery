@@ -216,14 +216,6 @@
 .visiting__address .icon { color: var(--accent-strong); margin-block-start: 0.2rem; }
 .visiting__directions .prose { margin-block: 1rem 2rem; }
 
-.guidelines { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
-.guidelines__group { padding: 2rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-card); }
-.guidelines__title { display: flex; align-items: center; gap: 0.6rem; }
-.guidelines__title .icon { color: var(--accent-strong); }
-.guidelines__list { display: grid; gap: 0.7rem; }
-.guidelines__list li { position: relative; padding-inline-start: 1.25rem; color: var(--text-soft); }
-.guidelines__list li::before { content: ""; position: absolute; inset-inline-start: 0; inset-block-start: 0.72em; inline-size: 0.45rem; block-size: 1px; background: var(--accent); }
-
 .stay { display: grid; gap: 3rem; align-items: start; }
 @media (min-width: 1000px) { .stay { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(3rem, 2rem + 4vw, 6rem); } .stay__intro { position: sticky; inset-block-start: calc(var(--layout-header-condensed) + 2rem); } }
 .stay__subhead { margin-block: 1rem; }

@@ -2,7 +2,7 @@
 import { html, raw, attrs, cx } from '../lib/html.mjs';
 
 // THE cross. Every cross on the site is drawn from these two paths, through
-// cross() below or the #i-cross symbols. Never use the ☦ text glyph.
+// cross() below or the #i-cross symbols. Never use the U+2626 text glyph.
 //
 // slavic:    Russian Orthodox eight-pointed cross. Short top bar (titulus),
 //            main bar, and a slanted footrest whose LEFT end (viewer's left)

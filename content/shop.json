@@ -1,0 +1,33 @@
+{
+  "$schema": "../schemas/shop.schema.json",
+  "categories": [
+    { "id": "icons", "label": { "en": "Icons", "ru": "Иконы", "el": "Εικόνες" } },
+    { "id": "incense", "label": { "en": "Incense", "ru": "Ладан", "el": "Θυμίαμα" } },
+    { "id": "candles", "label": { "en": "Candles", "ru": "Свечи", "el": "Κεριά" } },
+    { "id": "honey", "label": { "en": "Honey", "ru": "Мёд", "el": "Μέλι" } },
+    { "id": "prayer-ropes", "label": { "en": "Prayer ropes", "ru": "Чётки", "el": "Κομποσκοίνια" } },
+    { "id": "books", "label": { "en": "Books", "ru": "Книги", "el": "Βιβλία" } },
+    { "id": "handmade", "label": { "en": "Handmade", "ru": "Рукоделие", "el": "Χειροποίητα" } }
+  ],
+  "products": [
+    { "id": "icon-patron-small", "category": "icons", "price": 45, "image": { "art": "icon", "alt": { "en": "Drawn placeholder of a mounted icon", "ru": "Рисованный образец иконы на доске", "el": "Σχέδιο εικόνας σε ξύλο" } }, "name": { "en": "Patron icon, mounted print", "ru": "Икона покровителя, печать на доске", "el": "Εικόνα του προστάτη, εκτύπωση σε ξύλο" }, "description": { "en": "Sample item. 4 × 5 in.", "ru": "Образец товара. 10 × 13 см.", "el": "Δείγμα προϊόντος. 10 × 13 εκ." } },
+    { "id": "icon-hand-painted", "category": "icons", "price": 380, "shipping": false, "image": { "art": "icon", "alt": { "en": "Drawn placeholder of a painted icon", "ru": "Рисованный образец писаной иконы", "el": "Σχέδιο ζωγραφιστής εικόνας" } }, "name": { "en": "Hand-painted icon, egg tempera", "ru": "Писаная икона, яичная темпера", "el": "Χειροποίητη εικόνα, αυγοτέμπερα" }, "description": { "en": "Sample item. Pickup only.", "ru": "Образец товара. Только самовывоз.", "el": "Δείγμα προϊόντος. Μόνο παραλαβή." } },
+    { "id": "incense-rose", "category": "incense", "price": 14, "image": { "art": "incense", "alt": { "en": "Drawn placeholder of incense", "ru": "Рисованный образец ладана", "el": "Σχέδιο θυμιάματος" } }, "name": { "en": "Incense, rose", "ru": "Ладан «Роза»", "el": "Θυμίαμα, τριαντάφυλλο" }, "description": { "en": "Sample item. 50 g.", "ru": "Образец товара. 50 г.", "el": "Δείγμα προϊόντος. 50 γρ." } },
+    { "id": "incense-pine", "category": "incense", "price": 14, "image": { "art": "incense", "alt": { "en": "Drawn placeholder of incense", "ru": "Рисованный образец ладана", "el": "Σχέδιο θυμιάματος" } }, "name": { "en": "Incense, pine forest", "ru": "Ладан «Сосновый лес»", "el": "Θυμίαμα, πευκοδάσος" }, "description": { "en": "Sample item. 50 g.", "ru": "Образец товара. 50 г.", "el": "Δείγμα προϊόντος. 50 γρ." } },
+    { "id": "beeswax-tapers", "category": "candles", "price": 18, "image": { "art": "candles", "alt": { "en": "Drawn placeholder of beeswax candles", "ru": "Рисованный образец восковых свечей", "el": "Σχέδιο κεριών μελισσοκεριού" } }, "name": { "en": "Beeswax tapers", "ru": "Восковые свечи", "el": "Κεριά από μελισσοκέρι" }, "description": { "en": "Sample item. Bundle of 20.", "ru": "Образец товара. 20 штук.", "el": "Δείγμα προϊόντος. 20 τεμάχια." } },
+    { "id": "lampada-glass", "category": "candles", "price": 32, "image": { "art": "lampada", "alt": { "en": "Drawn placeholder of a hanging lampada", "ru": "Рисованный образец лампады", "el": "Σχέδιο καντηλιού" } }, "name": { "en": "Hanging lampada, red glass", "ru": "Подвесная лампада, красное стекло", "el": "Κρεμαστό καντήλι, κόκκινο γυαλί" }, "description": { "en": "Sample item.", "ru": "Образец товара.", "el": "Δείγμα προϊόντος." } },
+    { "id": "honey-linden", "category": "honey", "price": 16, "shipping": false, "image": { "art": "honey", "alt": { "en": "Drawn placeholder of a honey jar", "ru": "Рисованный образец банки мёда", "el": "Σχέδιο βάζου με μέλι" } }, "name": { "en": "Linden honey", "ru": "Липовый мёд", "el": "Μέλι φλαμουριάς" }, "description": { "en": "Sample item. 1 lb jar. Pickup only.", "ru": "Образец товара. Банка 450 г. Только самовывоз.", "el": "Δείγμα προϊόντος. Βάζο 450 γρ. Μόνο παραλαβή." } },
+    { "id": "prayer-rope-50", "category": "prayer-ropes", "price": 22, "image": { "art": "prayer-rope", "alt": { "en": "Drawn placeholder of a prayer rope", "ru": "Рисованный образец чёток", "el": "Σχέδιο κομποσκοινιού" } }, "name": { "en": "Wool prayer rope, 50 knots", "ru": "Шерстяные чётки, 50 узлов", "el": "Μάλλινο κομποσκοίνι, 50 κόμποι" }, "description": { "en": "Sample item.", "ru": "Образец товара.", "el": "Δείγμα προϊόντος." } },
+    { "id": "prayer-rope-100", "category": "prayer-ropes", "price": 34, "image": { "art": "prayer-rope", "alt": { "en": "Drawn placeholder of a prayer rope", "ru": "Рисованный образец чёток", "el": "Σχέδιο κομποσκοινιού" } }, "name": { "en": "Wool prayer rope, 100 knots", "ru": "Шерстяные чётки, 100 узлов", "el": "Μάλλινο κομποσκοίνι, 100 κόμποι" }, "description": { "en": "Sample item.", "ru": "Образец товара.", "el": "Δείγμα προϊόντος." } },
+    { "id": "book-prayers", "category": "books", "price": 20, "image": { "art": "book", "alt": { "en": "Drawn placeholder of a book", "ru": "Рисованный образец книги", "el": "Σχέδιο βιβλίου" } }, "name": { "en": "Prayer book", "ru": "Молитвослов", "el": "Προσευχητάριο" }, "description": { "en": "Sample item. Hardcover.", "ru": "Образец товара. Твёрдый переплёт.", "el": "Δείγμα προϊόντος. Σκληρόδετο." } },
+    { "id": "handmade-soap", "category": "handmade", "price": 9, "image": { "art": "handmade", "alt": { "en": "Drawn placeholder of handmade goods", "ru": "Рисованный образец рукоделия", "el": "Σχέδιο χειροποίητων" } }, "name": { "en": "Beeswax and herb soap", "ru": "Мыло с воском и травами", "el": "Σαπούνι με κερί και βότανα" }, "description": { "en": "Sample item.", "ru": "Образец товара.", "el": "Δείγμα προϊόντος." } },
+    { "id": "handmade-cards", "category": "handmade", "price": 12, "image": { "art": "handmade", "alt": { "en": "Drawn placeholder of handmade goods", "ru": "Рисованный образец рукоделия", "el": "Σχέδιο χειροποίητων" } }, "name": { "en": "Feast day cards, set of 6", "ru": "Праздничные открытки, 6 штук", "el": "Κάρτες εορτών, σετ των 6" }, "description": { "en": "Sample item.", "ru": "Образец товара.", "el": "Δείγμα προϊόντος." } }
+  ],
+  "shipping": {
+    "flatRate": 8,
+    "perExtraItem": 1,
+    "freeOver": 75,
+    "note": { "en": "Sample rate: $8 plus $1 for each extra item.", "ru": "Пример тарифа: $8 и $1 за каждый следующий товар.", "el": "Δείγμα χρέωσης: $8 και $1 για κάθε επιπλέον είδος." },
+    "pickupNote": { "en": "At the monastery shop during visiting hours.", "ru": "В лавке обители в часы посещения.", "el": "Στο πωλητήριο της μονής τις ώρες επισκέψεων." }
+  }
+}

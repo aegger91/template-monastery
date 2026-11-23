@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/layout.schema.json",
+  "pages": {
+    "home": {
+      "order": ["hero", "welcome", "cycle", "feasts", "visit", "commemorate", "gallery", "involved", "quote"],
+      "disabled": []
+    },
+    "visit": {
+      "order": ["header", "hours", "visiting-info", "stay", "spiritual-father"],
+      "disabled": []
+    },
+    "donate": {
+      "order": ["header", "give", "fund-progress"],
+      "disabled": ["fund-progress"]
+    }
+  }
+}

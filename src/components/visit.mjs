@@ -1,14 +1,8 @@
-// Visiting and pilgrimage: guidelines, the guest house stay request and the
-// request to speak with the spiritual father.
+// Visiting and pilgrimage: the guest house stay request and the request to
+// speak with the spiritual father.
 import { html, attrs, jsonScript } from '../lib/html.mjs';
 import { sectionHead, icon } from './primitives.mjs';
 import { field, choices, contactFields, formShell } from './forms.mjs';
-
-export function guidelines(p, ctx) {
-  return html`${sectionHead(p, ctx)}<div class="guidelines">${p.groups.map(
-    (g) => html`<section class="guidelines__group reveal"><h3 class="guidelines__title">${icon(g.icon || 'bell')}${ctx.text(g.title)}</h3><ul class="guidelines__list">${g.items.map((it) => html`<li>${ctx.md(it, { inline: true })}</li>`)}</ul></section>`
-  )}</div>`;
-}
 
 export function stayRequest(p, ctx) {
   const id = p.id;
@@ -73,5 +67,5 @@ export function confessionRequest(p, ctx) {
   </div>`;
 }
 
-export const metas = { guidelines: {}, 'stay-request': {}, 'confession-request': {} };
+export const metas = { 'stay-request': {}, 'confession-request': {} };
 export { attrs };

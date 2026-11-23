@@ -43,7 +43,7 @@ export function heroToday(p, ctx) {
 export function today(p, ctx) {
   const style = ctx.content.services.calendar;
   return html`<div class="today-section">
-    <div class="today-section__text">${sectionHead(p, ctx)}<div class="prose">${ctx.md(style.note)}</div></div>
+    <div class="today-section__text">${sectionHead(p, ctx)}${style.note ? html`<div class="prose">${ctx.md(style.note)}</div>` : ''}</div>
     ${todayPanel(ctx, { heading: ctx.l(p.panelTitle), compact: true })}
   </div>`;
 }
@@ -96,7 +96,7 @@ export function dailyCycle(p, ctx) {
     return html`<li class="cycle__item reveal" style="--i:${i}">
       <span class="cycle__hour">${entry ? cal.fmtTime(data, entry.time) : ''}</span>
       <h3 class="cycle__name">${ctx.text(s.name)}</h3>
-      <p class="cycle__about">${ctx.text(s.about)}</p>
+      ${s.about ? html`<p class="cycle__about">${ctx.text(s.about)}</p>` : ''}
     </li>`;
   })}</ol>${p.note ? html`<p class="cycle__note">${ctx.text(p.note)}</p>` : ''}`;
 }

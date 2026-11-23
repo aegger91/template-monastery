@@ -1,0 +1,65 @@
+{
+  "$schema": "../schemas/navigation.schema.json",
+  "header": {
+    "items": [
+      {
+        "label": { "en": "Our Monastery", "ru": "Обитель", "el": "Η Μονή" },
+        "children": [
+          { "page": "monastery", "label": { "en": "About the monastery", "ru": "Об обители", "el": "Η μονή μας" }, "note": { "en": "The brotherhood and the abbot", "ru": "Братия и игумен", "el": "Η αδελφότητα και ο ηγούμενος" } },
+          { "page": "monastery", "anchor": "patron", "label": { "en": "Our patron saint", "ru": "Небесный покровитель", "el": "Ο προστάτης άγιος" }, "note": { "en": "Relics and icons", "ru": "Святыни и иконы", "el": "Λείψανα και εικόνες" } },
+          { "page": "gallery", "label": { "en": "Gallery", "ru": "Фотографии", "el": "Φωτογραφίες" } },
+          { "page": "news", "label": { "en": "News", "ru": "Новости", "el": "Νέα" } }
+        ]
+      },
+      { "page": "services", "label": { "en": "Services", "ru": "Богослужения", "el": "Ακολουθίες" } },
+      {
+        "label": { "en": "Visit", "ru": "Паломникам", "el": "Επίσκεψη" },
+        "children": [
+          { "page": "visit", "label": { "en": "Visiting", "ru": "Посещение", "el": "Επίσκεψη" } },
+          { "page": "visit", "anchor": "stay", "label": { "en": "Stay at the guest house", "ru": "Проживание в гостинице", "el": "Διαμονή στον ξενώνα" } },
+          { "page": "visit", "anchor": "spiritual-father", "label": { "en": "Speak with a priest", "ru": "Беседа со священником", "el": "Συνομιλία με ιερέα" }, "note": { "en": "Confession and counsel", "ru": "Исповедь и совет", "el": "Εξομολόγηση και συμβουλή" } },
+          { "page": "get-involved", "label": { "en": "Work days and pilgrimages", "ru": "Трудники и паломничества", "el": "Ημέρες εργασίας και προσκυνήματα" } }
+        ]
+      },
+      { "page": "commemorations", "label": { "en": "Commemorations", "ru": "Поминовения", "el": "Μνημόσυνα" } },
+      { "page": "shop", "label": { "en": "Shop", "ru": "Лавка", "el": "Πωλητήριο" } },
+      { "page": "contact", "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" } }
+    ],
+    "actions": [
+      { "page": "donate", "label": { "en": "Donate", "ru": "Пожертвовать", "el": "Δωρεά" }, "icon": "heart", "style": "primary" }
+    ]
+  },
+  "footer": {
+    "about": { "en": "A sample website for an Orthodox monastery. Every name, date and figure here is placeholder content for the Project Orthodox website builder.", "ru": "Пример сайта православной обители. Все имена, даты и цифры здесь условные и служат образцом для конструктора сайтов Project Orthodox.", "el": "Δείγμα ιστότοπου ορθόδοξης μονής. Όλα τα ονόματα, οι ημερομηνίες και τα ποσά είναι ενδεικτικά για τον κατασκευαστή ιστότοπων Project Orthodox." },
+    "columns": [
+      {
+        "title": { "en": "Pray with us", "ru": "Молитва", "el": "Προσευχή" },
+        "links": [
+          { "page": "services", "label": { "en": "Services and schedule", "ru": "Расписание богослужений", "el": "Πρόγραμμα ακολουθιών" } },
+          { "page": "services", "anchor": "feasts", "label": { "en": "Coming feasts", "ru": "Ближайшие праздники", "el": "Προσεχείς εορτές" } },
+          { "page": "commemorations", "label": { "en": "Commemorations", "ru": "Поминовения", "el": "Μνημόσυνα" } },
+          { "page": "services", "anchor": "livestream", "label": { "en": "Livestream", "ru": "Трансляция", "el": "Ζωντανή μετάδοση" } }
+        ]
+      },
+      {
+        "title": { "en": "Visit", "ru": "Паломникам", "el": "Επίσκεψη" },
+        "links": [
+          { "page": "visit", "label": { "en": "Plan a visit", "ru": "Приезд в обитель", "el": "Σχεδιάστε την επίσκεψη" } },
+          { "page": "visit", "anchor": "stay", "label": { "en": "Guest house", "ru": "Гостиница", "el": "Ξενώνας" } },
+          { "page": "get-involved", "label": { "en": "Get involved", "ru": "Помощь обители", "el": "Συμμετοχή" } },
+          { "page": "contact", "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" } }
+        ]
+      },
+      {
+        "title": { "en": "Support", "ru": "Поддержать", "el": "Στήριξη" },
+        "links": [
+          { "page": "donate", "label": { "en": "Donate", "ru": "Пожертвовать", "el": "Δωρεά" } },
+          { "page": "shop", "label": { "en": "Monastery shop", "ru": "Монастырская лавка", "el": "Πωλητήριο" } },
+          { "page": "news", "label": { "en": "News", "ru": "Новости", "el": "Νέα" } },
+          { "page": "gallery", "label": { "en": "Gallery", "ru": "Фотографии", "el": "Φωτογραφίες" } }
+        ]
+      }
+    ],
+    "note": { "en": "Sample content. The photographs are public-domain works used as placeholders.", "ru": "Условное содержание. Фотографии и картины взяты из общественного достояния как образец.", "el": "Ενδεικτικό περιεχόμενο. Οι φωτογραφίες είναι έργα κοινής χρήσης ως δείγμα." }
+  }
+}

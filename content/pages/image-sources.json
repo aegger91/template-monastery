@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "image-sources",
+  "slug": "image-sources",
+  "title": { "en": "Image sources", "ru": "Источники изображений", "el": "Πηγές εικόνων" },
+  "sections": [
+    { "id": "header", "type": "page-header", "eyebrow": { "en": "Credits", "ru": "Источники", "el": "Πηγές" } },
+    { "id": "sources", "type": "sources" }
+  ]
+}

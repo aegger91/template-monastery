@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "contact",
+  "slug": "contact",
+  "title": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" },
+  "sections": [
+    { "id": "header", "type": "page-header", "eyebrow": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" }, "title": { "en": "Contact the monastery", "ru": "Связаться с обителью", "el": "Επικοινωνία με τη μονή" } },
+    {
+      "id": "contact",
+      "type": "contact",
+      "title": { "en": "Address and phone", "ru": "Адрес и телефон", "el": "Διεύθυνση και τηλέφωνο" },
+      "formTitle": { "en": "Write to us", "ru": "Напишите нам", "el": "Γράψτε μας" },
+      "subjects": [
+        { "id": "general", "label": { "en": "General question", "ru": "Общий вопрос", "el": "Γενική ερώτηση" } },
+        { "id": "visit", "label": { "en": "A visit", "ru": "Посещение", "el": "Επίσκεψη" } },
+        { "id": "shop", "label": { "en": "An order", "ru": "Заказ", "el": "Παραγγελία" } },
+        { "id": "other", "label": { "en": "Something else", "ru": "Другое", "el": "Κάτι άλλο" } }
+      ]
+    }
+  ]
+}

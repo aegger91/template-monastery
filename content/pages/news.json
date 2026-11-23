@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "news",
+  "slug": "news",
+  "title": { "en": "News", "ru": "Новости", "el": "Νέα" },
+  "sections": [
+    { "id": "header", "type": "page-header", "eyebrow": { "en": "News", "ru": "Новости", "el": "Νέα" }, "lead": { "en": "Sample news items.", "ru": "Примеры новостей.", "el": "Δείγματα ειδήσεων." } },
+    { "id": "list", "type": "news-list", "full": true }
+  ]
+}

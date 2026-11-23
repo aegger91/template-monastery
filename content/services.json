@@ -1,0 +1,660 @@
+{
+  "$schema": "../schemas/services.schema.json",
+  "calendar": {
+    "style": "julian",
+    "note": {
+      "en": "Dates follow the Julian calendar.",
+      "ru": "Даты указаны по юлианскому календарю.",
+      "el": "Οι ημερομηνίες ακολουθούν το Ιουλιανό ημερολόγιο."
+    },
+    "fullCalendarUrl": ""
+  },
+  "services": {
+    "midnight-office": {
+      "name": {
+        "en": "Midnight Office",
+        "ru": "Полунощница",
+        "el": "Μεσονυκτικό"
+      }
+    },
+    "matins": {
+      "name": {
+        "en": "Matins",
+        "ru": "Утреня",
+        "el": "Όρθρος"
+      }
+    },
+    "hours": {
+      "name": {
+        "en": "Hours",
+        "ru": "Часы",
+        "el": "Ώρες"
+      }
+    },
+    "liturgy": {
+      "name": {
+        "en": "Divine Liturgy",
+        "ru": "Божественная литургия",
+        "el": "Θεία Λειτουργία"
+      }
+    },
+    "vespers": {
+      "name": {
+        "en": "Vespers",
+        "ru": "Вечерня",
+        "el": "Εσπερινός"
+      }
+    },
+    "compline": {
+      "name": {
+        "en": "Compline",
+        "ru": "Повечерие",
+        "el": "Απόδειπνο"
+      }
+    },
+    "vigil": {
+      "name": {
+        "en": "All-night Vigil",
+        "ru": "Всенощное бдение",
+        "el": "Αγρυπνία"
+      }
+    }
+  },
+  "week": {
+    "mon": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ],
+    "tue": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ],
+    "wed": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ],
+    "thu": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ],
+    "fri": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ],
+    "sat": [
+      {
+        "service": "midnight-office",
+        "time": "05:00"
+      },
+      {
+        "service": "matins",
+        "time": "05:30"
+      },
+      {
+        "service": "hours",
+        "time": "07:30"
+      },
+      {
+        "service": "liturgy",
+        "time": "08:00"
+      },
+      {
+        "service": "vigil",
+        "time": "18:00"
+      }
+    ],
+    "sun": [
+      {
+        "service": "midnight-office",
+        "time": "06:30",
+        "note": {
+          "en": "Sunday Midnight Office",
+          "ru": "Воскресная полунощница",
+          "el": "Κυριακάτικο Μεσονυκτικό"
+        }
+      },
+      {
+        "service": "hours",
+        "time": "08:40"
+      },
+      {
+        "service": "liturgy",
+        "time": "09:00"
+      },
+      {
+        "service": "vespers",
+        "time": "17:00"
+      },
+      {
+        "service": "compline",
+        "time": "19:30"
+      }
+    ]
+  },
+  "weekNote": {
+    "en": "Times change on feasts. See the month view.",
+    "ru": "В праздники время меняется. Смотрите расписание на месяц.",
+    "el": "Στις εορτές οι ώρες αλλάζουν. Δείτε το μηνιαίο πρόγραμμα."
+  },
+  "feastPattern": {
+    "eve": [
+      {
+        "service": "vigil",
+        "time": "18:00"
+      }
+    ],
+    "day": [
+      {
+        "service": "hours",
+        "time": "08:40"
+      },
+      {
+        "service": "liturgy",
+        "time": "09:00"
+      }
+    ]
+  },
+  "feasts": [
+    {
+      "id": "circumcision",
+      "date": "01-01",
+      "rank": "great",
+      "name": {
+        "en": "Circumcision of the Lord; St Basil the Great",
+        "ru": "Обрезание Господне; святителя Василия Великого",
+        "el": "Περιτομή του Κυρίου· Άγιος Βασίλειος ο Μέγας"
+      },
+      "short": {
+        "en": "Circumcision",
+        "ru": "Обрезание",
+        "el": "Περιτομή"
+      }
+    },
+    {
+      "id": "theophany",
+      "date": "01-06",
+      "rank": "great",
+      "name": {
+        "en": "Holy Theophany of our Lord",
+        "ru": "Святое Богоявление. Крещение Господне",
+        "el": "Τα Άγια Θεοφάνεια"
+      },
+      "short": {
+        "en": "Theophany",
+        "ru": "Крещение",
+        "el": "Θεοφάνεια"
+      }
+    },
+    {
+      "id": "three-hierarchs",
+      "date": "01-30",
+      "rank": "vigil",
+      "name": {
+        "en": "The Three Holy Hierarchs",
+        "ru": "Собор трех святителей",
+        "el": "Οι Τρεις Ιεράρχες"
+      }
+    },
+    {
+      "id": "meeting",
+      "date": "02-02",
+      "rank": "great",
+      "name": {
+        "en": "Meeting of the Lord in the Temple",
+        "ru": "Сретение Господне",
+        "el": "Η Υπαπαντή του Κυρίου"
+      },
+      "short": {
+        "en": "Meeting",
+        "ru": "Сретение",
+        "el": "Υπαπαντή"
+      }
+    },
+    {
+      "id": "annunciation",
+      "date": "03-25",
+      "rank": "great",
+      "name": {
+        "en": "Annunciation of the Most Holy Theotokos",
+        "ru": "Благовещение Пресвятой Богородицы",
+        "el": "Ο Ευαγγελισμός της Θεοτόκου"
+      },
+      "short": {
+        "en": "Annunciation",
+        "ru": "Благовещение",
+        "el": "Ευαγγελισμός"
+      }
+    },
+    {
+      "id": "george",
+      "date": "04-23",
+      "rank": "vigil",
+      "name": {
+        "en": "Holy Great-martyr George",
+        "ru": "Великомученика Георгия Победоносца",
+        "el": "Άγιος Γεώργιος ο Τροπαιοφόρος"
+      }
+    },
+    {
+      "id": "john-nativity",
+      "date": "06-24",
+      "rank": "great",
+      "name": {
+        "en": "Nativity of St John the Baptist",
+        "ru": "Рождество Иоанна Предтечи",
+        "el": "Το Γενέσιον του Τιμίου Προδρόμου"
+      },
+      "short": {
+        "en": "St John",
+        "ru": "Предтеча",
+        "el": "Πρόδρομος"
+      }
+    },
+    {
+      "id": "peter-paul",
+      "date": "06-29",
+      "rank": "great",
+      "name": {
+        "en": "Holy Apostles Peter and Paul",
+        "ru": "Святых первоверховных апостолов Петра и Павла",
+        "el": "Άγιοι Απόστολοι Πέτρος και Παύλος"
+      },
+      "short": {
+        "en": "Peter and Paul",
+        "ru": "Петра и Павла",
+        "el": "Πέτρος, Παύλος"
+      }
+    },
+    {
+      "id": "transfiguration",
+      "date": "08-06",
+      "rank": "great",
+      "name": {
+        "en": "Holy Transfiguration of our Lord",
+        "ru": "Преображение Господне",
+        "el": "Η Μεταμόρφωση του Σωτήρος"
+      },
+      "short": {
+        "en": "Transfiguration",
+        "ru": "Преображение",
+        "el": "Μεταμόρφωση"
+      }
+    },
+    {
+      "id": "dormition",
+      "date": "08-15",
+      "rank": "great",
+      "name": {
+        "en": "Dormition of the Most Holy Theotokos",
+        "ru": "Успение Пресвятой Богородицы",
+        "el": "Η Κοίμηση της Θεοτόκου"
+      },
+      "short": {
+        "en": "Dormition",
+        "ru": "Успение",
+        "el": "Κοίμηση"
+      }
+    },
+    {
+      "id": "beheading",
+      "date": "08-29",
+      "rank": "great",
+      "name": {
+        "en": "Beheading of St John the Baptist",
+        "ru": "Усекновение главы Иоанна Предтечи",
+        "el": "Η Αποτομή της Κεφαλής του Προδρόμου"
+      },
+      "short": {
+        "en": "Beheading",
+        "ru": "Усекновение",
+        "el": "Αποτομή"
+      }
+    },
+    {
+      "id": "theotokos-nativity",
+      "date": "09-08",
+      "rank": "great",
+      "name": {
+        "en": "Nativity of the Most Holy Theotokos",
+        "ru": "Рождество Пресвятой Богородицы",
+        "el": "Το Γενέσιον της Θεοτόκου"
+      },
+      "short": {
+        "en": "Nativity of the Theotokos",
+        "ru": "Рождество Богородицы",
+        "el": "Γενέσιον Θεοτόκου"
+      }
+    },
+    {
+      "id": "elevation",
+      "date": "09-14",
+      "rank": "great",
+      "name": {
+        "en": "Universal Elevation of the Precious Cross",
+        "ru": "Воздвижение Честного и Животворящего Креста Господня",
+        "el": "Η Ύψωση του Τιμίου Σταυρού"
+      },
+      "short": {
+        "en": "Elevation",
+        "ru": "Воздвижение",
+        "el": "Ύψωση"
+      }
+    },
+    {
+      "id": "protection",
+      "date": "10-01",
+      "rank": "great",
+      "name": {
+        "en": "Protection of the Most Holy Theotokos",
+        "ru": "Покров Пресвятой Богородицы",
+        "el": "Η Αγία Σκέπη της Θεοτόκου"
+      },
+      "short": {
+        "en": "Protection",
+        "ru": "Покров",
+        "el": "Σκέπη"
+      }
+    },
+    {
+      "id": "archangels",
+      "date": "11-08",
+      "rank": "vigil",
+      "name": {
+        "en": "Synaxis of the Archangel Michael",
+        "ru": "Собор Архистратига Михаила",
+        "el": "Σύναξη των Ταξιαρχών"
+      }
+    },
+    {
+      "id": "entry",
+      "date": "11-21",
+      "rank": "great",
+      "name": {
+        "en": "Entry of the Most Holy Theotokos into the Temple",
+        "ru": "Введение во храм Пресвятой Богородицы",
+        "el": "Τα Εισόδια της Θεοτόκου"
+      },
+      "short": {
+        "en": "Entry",
+        "ru": "Введение",
+        "el": "Εισόδια"
+      }
+    },
+    {
+      "id": "nicholas",
+      "date": "12-06",
+      "rank": "vigil",
+      "name": {
+        "en": "St Nicholas the Wonderworker",
+        "ru": "Святителя Николая",
+        "el": "Άγιος Νικόλαος"
+      }
+    },
+    {
+      "id": "patronal",
+      "date": "12-14",
+      "rank": "patronal",
+      "name": {
+        "en": "Patronal feast of St. Example (sample)",
+        "ru": "Престольный праздник святого Примера (пример)",
+        "el": "Πανήγυρις του Αγίου Παραδείγματος (δείγμα)"
+      },
+      "short": {
+        "en": "Patronal feast",
+        "ru": "Престольный",
+        "el": "Πανήγυρις"
+      }
+    },
+    {
+      "id": "nativity",
+      "date": "12-25",
+      "rank": "great",
+      "name": {
+        "en": "Nativity of our Lord Jesus Christ",
+        "ru": "Рождество Христово",
+        "el": "Η Γέννηση του Χριστού"
+      },
+      "short": {
+        "en": "Nativity",
+        "ru": "Рождество",
+        "el": "Χριστούγεννα"
+      }
+    },
+    {
+      "id": "palm-sunday",
+      "fromPascha": -7,
+      "rank": "great",
+      "name": {
+        "en": "Entry of the Lord into Jerusalem (Palm Sunday)",
+        "ru": "Вход Господень в Иерусалим",
+        "el": "Η Είσοδος του Κυρίου στα Ιεροσόλυμα (Κυριακή των Βαΐων)"
+      },
+      "short": {
+        "en": "Palm Sunday",
+        "ru": "Вербное",
+        "el": "Βαΐων"
+      }
+    },
+    {
+      "id": "holy-saturday",
+      "fromPascha": -1,
+      "rank": "other",
+      "name": {
+        "en": "Holy and Great Saturday",
+        "ru": "Великая Суббота",
+        "el": "Μέγα Σάββατο"
+      },
+      "services": [
+        {
+          "service": "liturgy",
+          "time": "09:00",
+          "note": {
+            "en": "Vesperal Liturgy of St Basil",
+            "ru": "Вечерня с литургией святителя Василия Великого",
+            "el": "Εσπερινή Λειτουργία του Μεγάλου Βασιλείου"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pascha",
+      "fromPascha": 0,
+      "rank": "great",
+      "replaceDay": true,
+      "name": {
+        "en": "Holy Pascha, the Resurrection of Christ",
+        "ru": "Светлое Христово Воскресение. Пасха",
+        "el": "Το Άγιον Πάσχα"
+      },
+      "short": {
+        "en": "Pascha",
+        "ru": "Пасха",
+        "el": "Πάσχα"
+      },
+      "eve": [
+        {
+          "service": "midnight-office",
+          "time": "23:30",
+          "note": {
+            "en": "Paschal Nocturns",
+            "ru": "Пасхальная полунощница",
+            "el": "Μεσονυκτικό του Πάσχα"
+          }
+        }
+      ],
+      "services": [
+        {
+          "service": "matins",
+          "time": "00:00",
+          "note": {
+            "en": "Paschal Matins",
+            "ru": "Пасхальная утреня",
+            "el": "Αναστάσιμος Όρθρος"
+          }
+        },
+        {
+          "service": "hours",
+          "time": "02:30",
+          "note": {
+            "en": "Paschal Hours",
+            "ru": "Пасхальные часы",
+            "el": "Ώρες του Πάσχα"
+          }
+        },
+        {
+          "service": "liturgy",
+          "time": "02:45"
+        },
+        {
+          "service": "vespers",
+          "time": "14:00",
+          "note": {
+            "en": "Agape Vespers",
+            "ru": "Пасхальная вечерня",
+            "el": "Εσπερινός της Αγάπης"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "fromPascha": 39,
+      "rank": "great",
+      "name": {
+        "en": "Ascension of our Lord",
+        "ru": "Вознесение Господне",
+        "el": "Η Ανάληψη του Κυρίου"
+      },
+      "short": {
+        "en": "Ascension",
+        "ru": "Вознесение",
+        "el": "Ανάληψη"
+      }
+    },
+    {
+      "id": "pentecost",
+      "fromPascha": 49,
+      "rank": "great",
+      "name": {
+        "en": "Holy Pentecost, the Holy Trinity",
+        "ru": "День Святой Троицы. Пятидесятница",
+        "el": "Η Πεντηκοστή"
+      },
+      "short": {
+        "en": "Pentecost",
+        "ru": "Троица",
+        "el": "Πεντηκοστή"
+      }
+    }
+  ]
+}

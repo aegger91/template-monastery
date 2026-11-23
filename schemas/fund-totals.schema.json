@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "raised",
+    "donors",
+    "updatedAt"
+  ],
+  "properties": {
+    "raised": {
+      "type": "number"
+    },
+    "donors": {
+      "type": "number"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "sample": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

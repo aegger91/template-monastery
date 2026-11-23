@@ -1,0 +1,95 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "home",
+  "slug": "",
+  "title": { "en": "Home", "ru": "Главная", "el": "Αρχική" },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero-today",
+      "eyebrow": { "en": "Sample monastery website", "ru": "Пример сайта обители", "el": "Δείγμα ιστότοπου μονής" },
+      "lead": { "en": "Placeholder for one line about the monastery.", "ru": "Место для одной строки об обители.", "el": "Θέση για μία γραμμή για τη μονή." },
+      "todayTitle": { "en": "Today at the monastery", "ru": "Сегодня в обители", "el": "Σήμερα στη μονή" },
+      "image": { "src": "/assets/img/quiet-abode-levitan.jpg", "alt": { "en": "A monastery across a river at sunset, reached by a wooden footbridge", "ru": "Монастырь за рекой на закате, деревянный мостик", "el": "Μονή πέρα από ποτάμι στο ηλιοβασίλεμα, με ξύλινη γέφυρα" }, "position": "50% 40%" },
+      "actions": [
+        { "page": "services", "label": { "en": "Services", "ru": "Богослужения", "el": "Ακολουθίες" }, "style": "light" },
+        { "page": "visit", "label": { "en": "Plan a visit", "ru": "Приехать в обитель", "el": "Επίσκεψη" }, "style": "secondary" }
+      ]
+    },
+    {
+      "id": "welcome",
+      "type": "split",
+      "eyebrow": { "en": "Our monastery", "ru": "Обитель", "el": "Η μονή" },
+      "title": { "en": "Welcome", "ru": "Добро пожаловать", "el": "Καλώς ήρθατε" },
+      "body": { "en": "Placeholder for a short welcome from the monastery.", "ru": "Место для краткого приветствия от обители.", "el": "Θέση για ένα σύντομο καλωσόρισμα από τη μονή." },
+      "image": { "src": "/assets/img/lake-monastery-1910.jpg", "alt": { "en": "A white monastery on an island, joined to the shore by a long bridge", "ru": "Белый монастырь на острове и длинный мост к берегу", "el": "Λευκή μονή σε νησί, ενωμένη με την ακτή με μακριά γέφυρα" } },
+      "actions": [{ "page": "monastery", "label": { "en": "About the monastery", "ru": "Об обители", "el": "Η μονή μας" }, "style": "link" }]
+    },
+    {
+      "id": "cycle",
+      "type": "daily-cycle",
+      "background": "charcoal",
+      "eyebrow": { "en": "Every day", "ru": "Каждый день", "el": "Κάθε ημέρα" },
+      "title": { "en": "The daily cycle of services", "ru": "Суточный круг богослужений", "el": "Ο ημερήσιος κύκλος των ακολουθιών" },
+      "services": ["midnight-office", "matins", "hours", "liturgy", "vespers", "compline"],
+      "timesFrom": "tue",
+      "note": { "en": "Weekday times. Sundays and feasts differ.", "ru": "Время в будние дни. В воскресенья и праздники оно другое.", "el": "Ώρες καθημερινών. Τις Κυριακές και τις εορτές διαφέρουν." }
+    },
+    {
+      "id": "feasts",
+      "type": "feast-list",
+      "eyebrow": { "en": "Calendar", "ru": "Календарь", "el": "Ημερολόγιο" },
+      "title": { "en": "Coming feasts", "ru": "Ближайшие праздники", "el": "Προσεχείς εορτές" },
+      "limit": 4,
+      "actions": [{ "page": "services", "anchor": "schedule", "label": { "en": "Full schedule", "ru": "Всё расписание", "el": "Όλο το πρόγραμμα" }, "style": "link" }]
+    },
+    {
+      "id": "visit",
+      "type": "cta-band",
+      "image": { "src": "/assets/img/holy-gates-1909.jpg", "alt": { "en": "Monastery gate church with green domes", "ru": "Надвратная церковь с зелёными главами", "el": "Ναός πάνω από την πύλη μονής με πράσινους τρούλους" } },
+      "eyebrow": { "en": "Visiting", "ru": "Паломникам", "el": "Επίσκεψη" },
+      "title": { "en": "Visit the monastery", "ru": "Приезжайте в обитель", "el": "Επισκεφθείτε τη μονή" },
+      "body": { "en": "Placeholder for one line about visits and the guest house.", "ru": "Место для одной строки о посещении и гостинице.", "el": "Θέση για μία γραμμή για τις επισκέψεις και τον ξενώνα." },
+      "actions": [
+        { "page": "visit", "label": { "en": "Plan a visit", "ru": "Посещение", "el": "Επίσκεψη" }, "style": "primary" },
+        { "page": "visit", "anchor": "stay", "label": { "en": "Request a stay", "ru": "Просьба о проживании", "el": "Αίτημα διαμονής" }, "style": "secondary" }
+      ]
+    },
+    {
+      "id": "commemorate",
+      "type": "card-grid",
+      "background": "parchment",
+      "columns": 3,
+      "eyebrow": { "en": "Prayer and support", "ru": "Молитва и помощь", "el": "Προσευχή και στήριξη" },
+      "title": { "en": "Ways to take part", "ru": "Как участвовать", "el": "Τρόποι συμμετοχής" },
+      "cards": [
+        { "icon": "candle", "title": { "en": "Commemorations", "ru": "Поминовения", "el": "Μνημόσυνα" }, "text": { "en": "Send names for health or repose.", "ru": "Подайте записки о здравии и упокоении.", "el": "Στείλτε ονόματα υπέρ υγείας ή αναπαύσεως." }, "link": { "page": "commemorations", "label": { "en": "Submit names", "ru": "Подать записку", "el": "Αποστολή ονομάτων" } } },
+        { "icon": "cart", "title": { "en": "Monastery shop", "ru": "Монастырская лавка", "el": "Πωλητήριο" }, "text": { "en": "Icons, incense, candles, honey and books.", "ru": "Иконы, ладан, свечи, мёд и книги.", "el": "Εικόνες, θυμίαμα, κεριά, μέλι και βιβλία." }, "link": { "page": "shop", "label": { "en": "Open the shop", "ru": "Открыть лавку", "el": "Στο πωλητήριο" } } },
+        { "icon": "heart", "title": { "en": "Donate", "ru": "Пожертвовать", "el": "Δωρεά" }, "text": { "en": "Building fund, upkeep and single needs.", "ru": "На строительство, содержание и отдельные нужды.", "el": "Ανέγερση, συντήρηση και μεμονωμένες ανάγκες." }, "link": { "page": "donate", "label": { "en": "Give", "ru": "Пожертвовать", "el": "Δωρεά" } } }
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "eyebrow": { "en": "Gallery", "ru": "Фотографии", "el": "Φωτογραφίες" },
+      "title": { "en": "Around the monastery", "ru": "Вокруг обители", "el": "Γύρω από τη μονή" },
+      "layout": "strip",
+      "limit": 6,
+      "actions": [{ "page": "gallery", "label": { "en": "All photographs", "ru": "Все фотографии", "el": "Όλες οι φωτογραφίες" }, "style": "link" }]
+    },
+    {
+      "id": "involved",
+      "type": "oc-cta",
+      "eyebrow": { "en": "Get involved", "ru": "Помощь обители", "el": "Συμμετοχή" },
+      "title": { "en": "Work days and pilgrimages", "ru": "Трудовые дни и паломничества", "el": "Ημέρες εργασίας και προσκυνήματα" },
+      "body": { "en": "Sign up through OrthodoxConnect.", "ru": "Запись через OrthodoxConnect.", "el": "Εγγραφή μέσω OrthodoxConnect." }
+    },
+    {
+      "id": "quote",
+      "type": "quote",
+      "background": "parchment",
+      "text": { "en": "Acquire the Spirit of peace, and thousands around you will be saved.", "ru": "Стяжи дух мирен, и тысячи вокруг тебя спасутся.", "el": "Απόκτησε ειρηνικό πνεύμα και χιλιάδες γύρω σου θα σωθούν." },
+      "source": { "en": "St Seraphim of Sarov", "ru": "Преподобный Серафим Саровский", "el": "Άγιος Σεραφείμ του Σάρωφ" }
+    }
+  ]
+}

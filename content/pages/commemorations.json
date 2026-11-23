@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "commemorations",
+  "slug": "commemorations",
+  "title": { "en": "Commemorations", "ru": "Поминовения", "el": "Μνημόσυνα" },
+  "description": { "en": "Send names for commemoration for health or repose.", "ru": "Записки о здравии и об упокоении.", "el": "Ονόματα για μνημόνευση υπέρ υγείας ή αναπαύσεως." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Commemorations", "ru": "Поминовения", "el": "Μνημόσυνα" },
+      "title": { "en": "Names for commemoration", "ru": "Записки и сорокоусты", "el": "Ονόματα για μνημόνευση" },
+      "lead": { "en": "Names are commemorated at the Divine Liturgy.", "ru": "Имена поминаются за Божественной литургией.", "el": "Τα ονόματα μνημονεύονται στη Θεία Λειτουργία." }
+    },
+    {
+      "id": "names",
+      "type": "commemoration",
+      "maxNames": 10,
+      "startNames": 4,
+      "namePlaceholder": { "en": "For example: John", "ru": "Например: Иоанна", "el": "π.χ. Ιωάννου" },
+      "slipTypes": [
+        { "id": "health", "label": { "en": "For health", "ru": "О здравии", "el": "Υπέρ υγείας" }, "note": { "en": "The living", "ru": "О живых", "el": "Για τους ζώντες" }, "heading": { "en": "For the health of", "ru": "О здравии", "el": "Υπέρ υγείας" } },
+        { "id": "repose", "label": { "en": "For repose", "ru": "Об упокоении", "el": "Υπέρ αναπαύσεως" }, "note": { "en": "The departed", "ru": "Об усопших", "el": "Για τους κεκοιμημένους" }, "heading": { "en": "For the repose of", "ru": "Об упокоении", "el": "Υπέρ αναπαύσεως" } }
+      ],
+      "offerings": [
+        { "id": "liturgy", "amount": 10, "label": { "en": "One Liturgy", "ru": "На одну литургию", "el": "Μία Λειτουργία" }, "note": { "en": "Simple note", "ru": "Простая записка", "el": "Απλό δελτίο" } },
+        { "id": "sorokoust", "amount": 60, "label": { "en": "Sorokoust", "ru": "Сорокоуст", "el": "Σαρανταλείτουργο" }, "note": { "en": "Forty Liturgies", "ru": "Сорок литургий", "el": "Σαράντα Λειτουργίες" } },
+        { "id": "half-year", "amount": 150, "label": { "en": "Six months", "ru": "Полгода", "el": "Έξι μήνες" }, "note": { "en": "Daily for six months", "ru": "Ежедневно полгода", "el": "Καθημερινά για έξι μήνες" } },
+        { "id": "year", "amount": 250, "label": { "en": "One year", "ru": "Год", "el": "Ένα έτος" }, "note": { "en": "Daily for a year", "ru": "Ежедневно в течение года", "el": "Καθημερινά για ένα έτος" } }
+      ],
+      "lights": [
+        { "id": "none", "amount": 0, "label": { "en": "None", "ru": "Без свечи", "el": "Χωρίς" } },
+        { "id": "candle", "amount": 5, "label": { "en": "A beeswax candle", "ru": "Восковая свеча", "el": "Κερί από μελισσοκέρι" } },
+        { "id": "lampada", "amount": 20, "label": { "en": "A lampada", "ru": "Лампада", "el": "Καντήλι" }, "note": { "en": "For forty days", "ru": "На сорок дней", "el": "Για σαράντα ημέρες" } }
+      ],
+      "lightHint": { "en": "Optional", "ru": "Необязательно", "el": "Προαιρετικό" },
+      "sealAlt": { "en": "Drawn prosphora seal with IC XC NI KA", "ru": "Рисунок просфорной печати IC XC NI KA", "el": "Σχέδιο σφραγίδας πρόσφορου IC XC NI KA" },
+      "note": { "en": "Placeholder for a short note from the monastery.", "ru": "Место для короткой заметки от обители.", "el": "Θέση για σύντομο σημείωμα της μονής." }
+    }
+  ]
+}

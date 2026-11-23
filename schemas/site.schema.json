@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "name",
+    "locales",
+    "sourceLocale",
+    "url",
+    "timezone",
+    "currency",
+    "theme"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "locales": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "label",
+          "name",
+          "dir"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "dir": {
+            "enum": [
+              "ltr",
+              "rtl"
+            ]
+          },
+          "timeFormat": {
+            "enum": [
+              "12h",
+              "24h"
+            ]
+          },
+          "weekStart": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 6
+          },
+          "fallback": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "logo": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "enum": [
+            "kiot",
+            "seal",
+            "square",
+            "wordmark"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "payments": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "enum": [
+            "none",
+            "stripe",
+            "authorizenet"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "integrations": {
+      "type": "object",
+      "properties": {
+        "fundTotals": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "enum": [
+                "none",
+                "mock",
+                "stripe",
+                "authorizenet",
+                "tithely"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/page.schema.json",
+  "id": "donate",
+  "slug": "donate",
+  "title": { "en": "Donate", "ru": "Пожертвовать", "el": "Δωρεά" },
+  "description": { "en": "Give to the building fund, upkeep or a single need.", "ru": "Пожертвования на строительство, содержание или отдельную нужду.", "el": "Δωρεά για την ανέγερση, τη συντήρηση ή μία ανάγκη." },
+  "sections": [
+    {
+      "id": "header",
+      "type": "page-header",
+      "eyebrow": { "en": "Support the monastery", "ru": "Помощь обители", "el": "Στήριξη της μονής" },
+      "lead": { "en": "Choose a fund and an amount.", "ru": "Выберите фонд и сумму.", "el": "Επιλέξτε ταμείο και ποσό." }
+    },
+    {
+      "id": "give",
+      "type": "donate-form",
+      "title": { "en": "Other ways to give", "ru": "Другие способы", "el": "Άλλοι τρόποι" }
+    },
+    {
+      "id": "fund-progress",
+      "type": "fund-progress",
+      "background": "parchment",
+      "fund": "building",
+      "title": { "en": "Building fund", "ru": "На строительство", "el": "Ταμείο ανέγερσης" }
+    }
+  ]
+}
